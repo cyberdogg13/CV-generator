@@ -1,0 +1,5 @@
+simpele server vinden om de app/website te hosten.
+
+optie voor het toevoegen van extra text input velden.
+
+meerdere templates
