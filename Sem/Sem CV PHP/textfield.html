@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> scrum opdracht </title>
+    <link href="scrum1.css" rel="stylesheet">
+</head>
+<body>
+<section id="center">
+    <section id="header">
+        <h1 id="form"> CV Generator </h1>
+    </section> <br><br>
+    <h2 class="fill"> Fill in the form below.</h2><br>
+    <section id="personal">
+        <!--input.voornaam-->
+        <h3> Personal info: </h3>
+        <label for="personal"> First Name: </label>
+        <input class="personal" type="text" name="voornaam">
+        <br><br>
+        <!--imput.achternaam-->
+        <label for="personal"> Last Name: </label>
+        <input class="personal" type="text" name="achternaam">
+        <br><br>
+        <!--geboorte-->
+        <label for="personal"> Date of birth: </label>
+        <input class="personal" type="date" name="geboortedatum">
+        <br><br>
+        <!--stad-->
+        <label for="personal"> City: </label>
+        <input class="personal" type="text" name="City"><br><br>
+        <!--srtaatnaam-->
+        <label for="personal"> Street name: </label>
+        <input class="personal" type="text" name="streetname">
+        <br><br>
+        <!--postcode-->
+        <label for="personal"> Postcode: </label>
+        <input class="personal" type="text" name="postcode">
+        <br><br>
+        <!--profile.textarea-->
+        <label class="profile" for="personal"> Profile: </label>
+        <br>
+        <textarea rows="6" cols="50"> </textarea>
+        <br><br>
+    </section>
+
+    <!--Contact-->
+    <section  id="contact">
+        <h3> Contact info: </h3>
+        <br>
+        <!--input.email-->
+        <label for="contact"> Email: </label>
+        <input class="contact" type="text" name="email">
+        <br><br>
+        <!--phonenumber-->
+        <label for="contact"> Telephone: </label>
+        <input class="contact" type="text" name="telephone"><br><br>
+        <!--linkedin-->
+        <label for="contact"> Linkedin name: </label>
+        <input class="contact" type="text" name="Linkedin"><br><br><br>
+    </section>
+
+    <!--education-->
+    <section id="education">
+        <h3> Education: </h3>
+        <!-- All schools-->
+        <label for="education"> Education history: </label><br>
+        <textarea rows="4" cols="20"> </textarea><br><br>
+        <!--Certificates-->
+        <label for="contact"> Certificates: </label><br>
+        <textarea  rows="8" cols="30" name="telephone"></textarea><br><br>
+        <br><br>
+    </section>
+
+    <!--werkervaring-->
+    <section id="xp">
+        <h3> Work experience:</h3>
+        <Label for="xp"> Work history/companies: </Label><br>
+        <textarea rows="6" cols="50"> </textarea>
+    </section>
+
+    <!--skills-->
+    <section id="skills">
+        <h3> Skills: </h3>
+        <label for="skills"> Skills: </label> <label class="rating"> level 0/100%: </label><br>
+        <input class="rate1" type="text"size="30"> - <input type="text" maxlength="3" size="1"> % <br><br>
+        <input class="rate2" type="text"size="30"> - <input type="text" maxlength="3" size="1"> % <br><br>
+        <input class="rate3" type="text"size="30"> - <input type="text" maxlength="3" size="1"> % <br><br>
+        <input class="rate4" type="text"size="30"> - <input type="text" maxlength="3" size="1"> % <br><br>
+        <input class="rate5" type="text"size="30"> - <input type="text" maxlength="3" size="1"> % <br><br>
+        <label for="skills"> Characteristics </label>
+        <ul>
+            <li> <input type="text"> </li>
+            <li> <input type="text"> </li>
+            <li> <input type="text"> </li>
+            <li> <input type="text"> </li>
+            <li> <input type="text"> </li>
+        </ul>
+
+        <!--hobbys-->
+        <label for="skills"> Hobby's: </label><br>
+        <input class="hobby1" type="text" size="20">
+        <input class="hobby2" type="text" size="20">
+        <input class="hobby3" type="text" size="20">
+        <input class="hobby4" type="text" size="20">
+        <br><br>
+
+        <!--knop-->
+        <input class="knop" type="submit" name="knop"  value="Show preview" />
+    </section>
+</section>
+</body>
+</html>

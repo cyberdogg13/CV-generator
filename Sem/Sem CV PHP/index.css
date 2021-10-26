@@ -1,0 +1,35 @@
+.form{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightskyblue;
+}
+input[type=button], input[type=submit]{
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 10px 35px;
+    background-color: aqua;
+    border-color: cornflowerblue;
+    border-width: 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 25px;
+}
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkturquoise;
+}
+.p1{
+    color: aqua;
+}
+.Head   {
+    text-align: center;
+    font-size:larger ;
+}
+
