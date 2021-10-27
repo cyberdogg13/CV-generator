@@ -1,0 +1,24 @@
+eind PDF moet nog gecombineert wordern met een cv layout
+
+
+<h1>persenal info</h1>
+ first name: $firstname <br>
+ Last name: $lastname <br>
+ date of birth: $birth <br>
+ city: $city  <br>
+ streetname: $streetname  <br>
+ postcode: $postcode  <br>
+ profile: $profile <br>
+ <br>
+ <br>
+ E-mail: $email  <br>
+ phonenumber: $phonenumber  <br>
+ linkedin name: $linkedin  <br>
+
+
+
+
+
+
+
+
