@@ -1,0 +1,133 @@
+body {
+    font-family: sans-serif,Arial;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+/*-------------------------------Personal-header----------------------------------------------------------------------------------------*/
+.persona {
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+    color: #1c2a4b;
+    border-bottom: 10px solid #1c2a4b;
+}
+
+/*------------------------------------------------personal------------------------------------------------------------------------*/
+#pers {
+    width: 33%;
+    margin-left: 33%;
+    border-left: 5px solid #1c2a4b;
+    border-right: 5px solid #1c2a4b;
+    border-bottom: 2px solid #1c2a4b;
+}
+.person {
+    margin-top: 12px;
+    /*--margins-*/
+    /*--borders--*/
+    border: 3px solid #1c2a4b;
+    border-radius: 25px;
+}
+
+#personal {
+    padding:5px;
+    /*--margins--*/
+    /*--borders--*/
+}
+
+/*------------------------------------------------personal-text------------------------------------------------------------------------*/
+
+textarea {
+    font-family: sans-serif,Arial;
+    border: 3px solid #1c2a4b;
+    border-radius: 15px;
+    resize: none;
+  }
+
+textarea:focus {
+    background-color: aliceblue;
+    font-family: sans-serif,Arial;
+}
+/*------------------------------------------------Contact------------------------------------------------------------------------*/
+#contacts {
+    width: 33%;
+    margin-left: 33%;
+    border-left: 5px solid #1c2a4b;
+    border-right: 5px solid #1c2a4b;
+    border-bottom: 2px solid #1c2a4b;
+}
+#contact {
+    padding: 5px;
+}
+
+.contact {
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 12px;
+    width: 250px;
+    border-radius: 25px;
+    border: 3px solid #1c2a4b;
+}
+
+.contact,label {
+    margin-left: 0px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.date {
+    width: 40%;
+    border-radius: 25px;
+    border: 3px solid #1c2a4b;
+    padding: 10px;
+    margin-left: 0px;
+    margin-top: 10px;
+ }
+
+.date:focus {
+    border: 5px solid lawngreen;
+}
+
+/*-------------------------------------------------input-----------------------------------------------------------------------*/
+
+input[type=text]:focus {
+    border: 5px solid lawngreen;
+}
+
+/*-------------------------------------------------skills-----------------------------------------------------------------------*/
+
+#skillers {
+    width: 33%;
+    margin-left: 33%;
+    border-left: 5px solid #1c2a4b;
+    border-right: 5px solid #1c2a4b;
+    border-bottom: 2px solid #1c2a4b;
+}
+
+#skills {
+    padding: 5px;
+}
+
+#skills,input {
+    border-radius: 25px;
+    padding: 12px;
+    width: 250px;
+}
+
+.skill {
+    padding: 12px;
+    margin-left: 20px;
+    border: 3px solid #1c2a4b;
+}
+
+
+
+
