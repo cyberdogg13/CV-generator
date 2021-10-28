@@ -1,0 +1,13 @@
+naam(vol.)
+date of birth
+adress
+postcode
+email
+phone
+work history
+linkedin i.d
+certificates/education
+motivation
+skills
+profile
+foto(optioneel)
