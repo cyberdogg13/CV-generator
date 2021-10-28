@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 
 //:de link naar de style sheet
 echo '<link rel="stylesheet" type="text/css" href="index.css"></head>';
@@ -18,6 +19,10 @@ if (isset($_POST['submit'])) {
     $phonenumber = $_POST['phone'];
     $linkedin = $_POST['linkedin'];
 
+    $education = $_POST['education'];
+
+
+
     echo "<body class=container_content id=container_content>
 <link rel='stylesheet' href='cv.css'>
 <div id='center'>
@@ -35,6 +40,11 @@ if (isset($_POST['submit'])) {
  E-mail: $email  <br>
  phonenumber: $phonenumber  <br>
  linkedin name: $linkedin  <br>
+ <br>
+ <h1>Education</h1>
+ <br>
+ Education history: $education <br>
+ <br>
 </div>
  </body>";
 
