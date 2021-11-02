@@ -1,3 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: sans-serif,Arial;
 }
@@ -9,6 +16,10 @@ h2 {
 label {
     padding-left: 20px;
     padding-bottom: 10px;
+}
+
+section {
+    box-shadow: 8px 0 12px black;
 }
 /*-------------------------------Personal-header----------------------------------------------------------------------------------------*/
 .persona {
@@ -23,24 +34,18 @@ label {
 
 /*------------------------------------------------personal------------------------------------------------------------------------*/
 #pers {
-    width: 33%;
-    margin-left: 33%;
-    border-left: 5px solid #1c2a4b;
-    border-right: 5px solid #1c2a4b;
-    border-bottom: 2px solid #1c2a4b;
+    width: 50%;
+    margin: auto;
+    border: 5px solid #1c2a4b;
 }
 .person {
     margin-top: 12px;
-    /*--margins-*/
-    /*--borders--*/
     border: 3px solid #1c2a4b;
     border-radius: 25px;
 }
 
 #personal {
     padding:5px;
-    /*--margins--*/
-    /*--borders--*/
 }
 
 /*------------------------------------------------personal-text------------------------------------------------------------------------*/
@@ -55,14 +60,14 @@ textarea {
 textarea:focus {
     background-color: aliceblue;
     font-family: sans-serif,Arial;
+    border: 5px solid lawngreen;
+    padding: 0;
 }
 /*------------------------------------------------Contact------------------------------------------------------------------------*/
 #contacts {
-    width: 33%;
-    margin-left: 33%;
-    border-left: 5px solid #1c2a4b;
-    border-right: 5px solid #1c2a4b;
-    border-bottom: 2px solid #1c2a4b;
+    width: 50%;
+    margin: auto;
+    border: 5px solid #1c2a4b;
 }
 #contact {
     padding: 5px;
@@ -94,39 +99,37 @@ textarea:focus {
 
 .date:focus {
     border: 5px solid lawngreen;
+    padding: 0.53em;
+    background-color: aliceblue;
 }
 
 /*-------------------------------------------------input-----------------------------------------------------------------------*/
 
 input[type=text]:focus {
     border: 5px solid lawngreen;
+    padding: 0.66em;
+    background-color: aliceblue;
 }
 
 /*-------------------------------------------------skills-----------------------------------------------------------------------*/
 
 #skillers {
-    width: 33%;
-    margin-left: 33%;
-    border-left: 5px solid #1c2a4b;
-    border-right: 5px solid #1c2a4b;
-    border-bottom: 2px solid #1c2a4b;
+    width: 50%;
+    margin: auto;
+    border: 5px solid #1c2a4b;
 }
 
 #skills {
     padding: 5px;
+    width: 100%;
 }
-
-#skills,input {
+input {
     border-radius: 25px;
     padding: 12px;
-    width: 250px;
-}
-
-.skill {
-    padding: 12px;
-    margin-left: 20px;
     border: 3px solid #1c2a4b;
 }
+
+
 
 
 
