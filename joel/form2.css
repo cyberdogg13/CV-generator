@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: sans-serif,Arial;
+    font-family: sans-serif, Arial;
+    Background-image: linear-gradient(45deg, purple, #1c2a4b);
 }
 
 h2 {
@@ -14,12 +15,31 @@ h2 {
 }
 
 label {
-    padding-left: 20px;
+    padding-left: 0px;
     padding-bottom: 10px;
 }
 
+
 section {
-    box-shadow: 8px 0 12px black;
+    box-shadow: 0 8px 30px 1px black;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+}
+
+.file-upload {
+    margin-left: 25px;
+    background-image: linear-gradient(45deg, purple, #1c2a4b);
+    border: 3px solid #1c2a4b;
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+}
+
+.label,file-upload{
+    padding: 20px;
 }
 /*-------------------------------Personal-header----------------------------------------------------------------------------------------*/
 .persona {
@@ -28,8 +48,9 @@ section {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 60px;
-    color: #1c2a4b;
-    border-bottom: 10px solid #1c2a4b;
+    color: white;
+    border-bottom: 10px solid white;
+    background-image: linear-gradient(45deg, #1c2a4b, purple);
 }
 
 /*------------------------------------------------personal------------------------------------------------------------------------*/
@@ -38,6 +59,7 @@ section {
     margin: auto;
     border: 5px solid #1c2a4b;
 }
+
 .person {
     margin-top: 12px;
     border: 3px solid #1c2a4b;
@@ -45,30 +67,32 @@ section {
 }
 
 #personal {
-    padding:5px;
+    padding: 5px;
 }
 
 /*------------------------------------------------personal-text------------------------------------------------------------------------*/
 
 textarea {
-    font-family: sans-serif,Arial;
+    font-family: sans-serif, Arial;
     border: 3px solid #1c2a4b;
     border-radius: 15px;
     resize: none;
-  }
+}
 
 textarea:focus {
     background-color: aliceblue;
-    font-family: sans-serif,Arial;
+    font-family: sans-serif, Arial;
     border: 5px solid lawngreen;
     padding: 0;
 }
+
 /*------------------------------------------------Contact------------------------------------------------------------------------*/
 #contacts {
     width: 50%;
     margin: auto;
     border: 5px solid #1c2a4b;
 }
+
 #contact {
     padding: 5px;
 }
@@ -82,8 +106,8 @@ textarea:focus {
     border: 3px solid #1c2a4b;
 }
 
-.contact,label {
-    margin-left: 0px;
+.contact, label {
+    margin-left: 25px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------*/
@@ -95,7 +119,7 @@ textarea:focus {
     padding: 10px;
     margin-left: 0px;
     margin-top: 10px;
- }
+}
 
 .date:focus {
     border: 5px solid lawngreen;
@@ -123,11 +147,24 @@ input[type=text]:focus {
     padding: 5px;
     width: 100%;
 }
+
+.skill1 {
+    margin-left: 25px;
+}
+
 input {
     border-radius: 25px;
     padding: 12px;
     border: 3px solid #1c2a4b;
+    margin-left: 25px;
+
 }
+
+input[type="file"] {
+    display: none;
+    text-decoration-color: white;
+}
+
 
 
 
