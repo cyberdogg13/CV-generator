@@ -1,8 +1,11 @@
 * {
+    /*--sizing--*/
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /*--edits--*/
     scroll-behavior: smooth;
+    /*--borders--*/
+    box-sizing: border-box;
 }
 
 body {
@@ -12,13 +15,13 @@ body {
 
 h2 {
     text-align: center;
+    padding: 30px;
 }
 
 label {
     padding-left: 0px;
     padding-bottom: 10px;
 }
-
 
 section {
     box-shadow: 0 8px 30px 1px black;
@@ -30,66 +33,106 @@ header {
 }
 
 .file-upload {
+    /*--sizing--*/
     margin-left: 25px;
-    background-image: linear-gradient(45deg, purple, #1c2a4b);
-    border: 3px solid #1c2a4b;
     padding: 20px;
+    /*--edits--*/
     border-radius: 25px;
     color: white;
+    /*--borders--*/
+    background-image: linear-gradient(45deg, purple, #1c2a4b);
+    border: 3px solid #1c2a4b;
 }
 
-.label,file-upload{
+.label,file-upload {
     padding: 20px;
 }
-/*-------------------------------Personal-header----------------------------------------------------------------------------------------*/
+
+#add {
+    /*-- sizing--*/
+    max-width: 450px;
+    padding-top: 10px;
+    /*--edits--*/
+    overflow:hidden;
+    display:inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*--borders--*/
+    border: 3px solid purple;
+    border-radius: 25px;
+}
+
+/*-------------------------------Personal-header--------------------------------------------------------------------------------*/
+
 .persona {
-    text-align: center;
+    /*--sizing--*/
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    /*--edits--*/
+    text-align: center;
     font-size: 60px;
+    /*--borders--*/
     color: white;
     border-bottom: 10px solid white;
     background-image: linear-gradient(45deg, #1c2a4b, purple);
 }
 
 /*------------------------------------------------personal------------------------------------------------------------------------*/
+
 #pers {
+    /*--sizing--*/
+    margin-top: 50px;
+    margin-left: 375px;
     width: 50%;
-    margin: auto;
+    /*--borders--*/
     border: 5px solid #1c2a4b;
 }
 
 .person {
+    /*-- sizing--*/
+    width: 28%;
     margin-top: 12px;
+    /*--borders--*/
     border: 3px solid #1c2a4b;
     border-radius: 25px;
 }
 
 #personal {
-    padding: 5px;
+
 }
 
 /*------------------------------------------------personal-text------------------------------------------------------------------------*/
 
 textarea {
+    /*--sizing--*/
+    width: 90%;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 12px;
+    /*--edits--*/
+    outline: none;
     font-family: sans-serif, Arial;
+    resize: none;
+    /*--borders--*/
     border: 3px solid #1c2a4b;
     border-radius: 15px;
-    resize: none;
 }
 
 textarea:focus {
-    background-color: aliceblue;
+    /*--edits--*/
     font-family: sans-serif, Arial;
-    border: 5px solid lawngreen;
-    padding: 0;
+    /*--borders--*/
+    border: 3px solid lawngreen;
 }
 
 /*------------------------------------------------Contact------------------------------------------------------------------------*/
+
 #contacts {
+    /*--sizing'--*/
     width: 50%;
     margin: auto;
+    /*--borders--*/
     border: 5px solid #1c2a4b;
 }
 
@@ -98,10 +141,12 @@ textarea:focus {
 }
 
 .contact {
+    /*--sizing--*/
     margin-left: 10%;
     margin-top: 10px;
     padding: 12px;
     width: 250px;
+    /*--borders--*/
     border-radius: 25px;
     border: 3px solid #1c2a4b;
 }
@@ -110,29 +155,48 @@ textarea:focus {
     margin-left: 25px;
 }
 
+.cont {
+    margin-top: 12px;
+}
+
 /*------------------------------------------------------------------------------------------------------------------------*/
 
 .date {
-    width: 40%;
+    /*--sizing--*/
+    width: 26%;
+    padding: 10px;
+    margin-left: 25px;
+    margin-top: 10px;
+    /*--borders--*/
     border-radius: 25px;
     border: 3px solid #1c2a4b;
-    padding: 10px;
-    margin-left: 0px;
-    margin-top: 10px;
 }
 
 .date:focus {
     border: 5px solid lawngreen;
-    padding: 0.53em;
-    background-color: aliceblue;
+    padding: 8px;
 }
 
 /*-------------------------------------------------input-----------------------------------------------------------------------*/
 
+input {
+    /*--sizing--*/
+    margin-left: 25px;
+    padding: 12px;
+    /*--edits--*/
+    outline: none;
+    /*--borders--*/
+    border: 3px solid #1c2a4b;
+    border-radius: 25px;
+}
+
 input[type=text]:focus {
-    border: 5px solid lawngreen;
-    padding: 0.66em;
-    background-color: aliceblue;
+    border: 3px solid lawngreen;
+}
+
+#picture {
+    display: none;
+    text-decoration-color: white;
 }
 
 /*-------------------------------------------------skills-----------------------------------------------------------------------*/
@@ -152,22 +216,7 @@ input[type=text]:focus {
     margin-left: 25px;
 }
 
-input {
-    border-radius: 25px;
-    padding: 12px;
-    border: 3px solid #1c2a4b;
-    margin-left: 25px;
-
+.skill {
+    margin-top: 12px;
+    width: 28%;
 }
-
-input[type="file"] {
-    display: none;
-    text-decoration-color: white;
-}
-
-
-
-
-
-
-

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> Form2 </title>
-    <link href="form2.css" rel="stylesheet">
+    <link href="form2.css" rel="stylesheet"> <script src="formscript.js"> </script>
 </head>
 <body>
 <header>
@@ -13,14 +13,16 @@
 <div class="wrapper">
     <section id="pers">
         <div id="personal">
-            <h2> Personal info: </h2> <br><br><br>
+            <h2> Personal info </h2> <br><br><br>
 
             <!--add picture file-->
             <label class="file-upload">
-                <input type="file"/>
+                <input id="picture" type="file" onchange="getFoto()"/>
                 Click to add picture
             </label>
-            <br><br><br>
+
+            <label id="add"> No file added yet </label>
+            <br><br><br><br><br>
             <!--first name-->
             <label for="personal"> First Name: </label> <br>
             <input class="person" type="text" name="voornaam">
@@ -37,13 +39,10 @@
             <label for="personal"> Date of birth: </label> <br>
             <input class="date" type="date" name="Date of birth">
             <br><br>
-            <!--Hobby's-->
-            <label for="personal"> Hobby's: </label> <br>
-            <input class="person" type="text" name="Hobbys">
-            <br><br>
             <!--City-->
             <label for="personal"> City: </label> <br>
-            <input class="person" type="text" name="City"><br><br>
+            <input class="person" type="text" name="City">
+            <br><br>
             <!--Streetname-->
             <label for="personal"> Street name: </label> <br>
             <input class="person" type="text" name="streetname">
@@ -51,7 +50,13 @@
             <!--Adress-->
             <label for="personal"> Adress: </label> <br>
             <input class="person" type="text" name="postcode">
-            <br> <br>
+            <br><br>
+            <!--Hobby's-->
+            <label for="personal"> Hobby's: </label> <br>
+            <input class="person" type="text" name="Hobbys">
+            <input class="person" type="text" name="Hobbys">
+            <input class="person" type="text" name="Hobbys">
+            <br><br>
             <!--Motivation.textarea-->
             <label class="personal" for="personal"> Motivation: </label>
             <br>
@@ -62,7 +67,7 @@
 
     <section id="contacts">
         <div id="contact">
-            <h2> Contact info: </h2><br>
+            <h2> Contact info: </h2> <br>
             <!--Email-->
             <label for="contact"> Email: </label> <br>
             <input class="cont" type="text" name="email">
@@ -84,23 +89,25 @@
             <br>
             <!--work history-->
             <label for="skills"> Work History: </label> <br>
+            <input class="skill" type="text" name="Work History">
+            <input class="skill" type="text" name="Work History">
             <input class="skill" type="text" name="Work History"> <br><br>
             <!--certificates/education-->
-            <label for="skills"> Certificates: </label><br>
+            <label for="skills"> Certificates: </label> <br>
             <textarea rows="6" cols="30"> </textarea> <br><br>
             <!--personal skills-->
             <label for="skills"> personal Skills: </label> <br>
             <input class="skill1" type="text" name="personal skill">
             <input class="skill" type="text" name="personal skill">
             <input class="skill" type="text" name="personal skill">
-            <br> <br>
+            <br><br>
         </div>
     </section>
 </div>
 <br> <br>
 <footer>
 </footer>
-<script href="formscript.js"></script>
+
 </body>
 </html>
 
