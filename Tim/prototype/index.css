@@ -1,91 +1,222 @@
 * {
+    /*--sizing--*/
+    padding: 0;
+    margin: 0;
+    /*--edits--*/
+    scroll-behavior: smooth;
+    /*--borders--*/
     box-sizing: border-box;
-    font-family: "Arial", "sans-serif";
 }
 
 body {
-    background-color: white;
-    margin-top: 0px;
+    font-family: sans-serif, Arial;
+    Background-image: linear-gradient(45deg, purple, #1c2a4b);
 }
 
-@media all and (min-width: 1000px) {
-    section#center {
-        width: 1000px;
-        margin: auto;
-    }
-}
-
-form#center {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    border-left: 10px solid #1c2a4b;
-    border-right: 10px solid #1c2a4b;
-    background-image: linear-gradient(to right,lightcyan, aliceblue , lightcyan);
-}
-
-/*--------------------------------------------------------*/
-h3 {
-    font-weight: bold;
-}
-
-.fill {
+h2 {
     text-align: center;
+    padding: 30px;
 }
 
-#form {
-    font-size: 50px;
-    text-align: center;
-    color: black;
-    border-bottom: 10px solid #1c2a4b;
-    margin: -1px;
+label {
+    padding-left: 0px;
     padding-bottom: 10px;
 }
 
-/*----------------Fatoren--------------------------------*/
+section {
+    box-shadow: 0 8px 30px 1px black;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+}
+
+.file-upload {
+    /*--sizing--*/
+    margin-left: 25px;
+    padding: 20px;
+    /*--edits--*/
+    border-radius: 25px;
+    color: white;
+    /*--borders--*/
+    background-image: linear-gradient(45deg, purple, #1c2a4b);
+    border: 3px solid #1c2a4b;
+}
+
+.label,file-upload {
+    padding: 20px;
+}
+
+#add {
+    /*-- sizing--*/
+    max-width: 450px;
+    padding-top: 10px;
+    /*--edits--*/
+    overflow:hidden;
+    display:inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*--borders--*/
+    border: 3px solid purple;
+    border-radius: 25px;
+}
+
+/*-------------------------------Personal-header--------------------------------------------------------------------------------*/
+
+.persona {
+    /*--sizing--*/
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*--edits--*/
+    text-align: center;
+    font-size: 60px;
+    /*--borders--*/
+    color: white;
+    border-bottom: 10px solid white;
+    background-image: linear-gradient(45deg, #1c2a4b, purple);
+}
+
+/*------------------------------------------------personal------------------------------------------------------------------------*/
+
+#pers {
+    /*--sizing--*/
+    margin-top: 50px;
+    margin-left: 375px;
+    width: 50%;
+    /*--borders--*/
+    border: 5px solid #1c2a4b;
+}
+
+.person {
+    /*-- sizing--*/
+    width: 28%;
+    margin-top: 12px;
+    /*--borders--*/
+    border: 3px solid #1c2a4b;
+    border-radius: 25px;
+}
+
 #personal {
-    margin-left: 100px;
+
+}
+
+/*------------------------------------------------personal-text------------------------------------------------------------------------*/
+
+textarea {
+    /*--sizing--*/
+    width: 90%;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 12px;
+    /*--edits--*/
+    outline: none;
+    font-family: sans-serif, Arial;
+    resize: none;
+    /*--borders--*/
+    border: 3px solid #1c2a4b;
+    border-radius: 15px;
+}
+
+textarea:focus {
+    /*--edits--*/
+    font-family: sans-serif, Arial;
+    /*--borders--*/
+    border: 3px solid lawngreen;
+}
+
+/*------------------------------------------------Contact------------------------------------------------------------------------*/
+
+#contacts {
+    /*--sizing'--*/
+    width: 50%;
+    margin: auto;
+    /*--borders--*/
+    border: 5px solid #1c2a4b;
 }
 
 #contact {
-    margin-left: 100px;
+    padding: 5px;
 }
 
-#education {
-    margin-left: 100px;
+.contact {
+    /*--sizing--*/
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 12px;
+    width: 250px;
+    /*--borders--*/
+    border-radius: 25px;
+    border: 3px solid #1c2a4b;
+}
+
+.contact, label {
+    margin-left: 25px;
+}
+
+.cont {
+    margin-top: 12px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.date {
+    /*--sizing--*/
+    width: 26%;
+    padding: 10px;
+    margin-left: 25px;
+    margin-top: 10px;
+    /*--borders--*/
+    border-radius: 25px;
+    border: 3px solid #1c2a4b;
+}
+
+.date:focus {
+    border: 5px solid lawngreen;
+    padding: 8px;
+}
+
+/*-------------------------------------------------input-----------------------------------------------------------------------*/
+
+input {
+    /*--sizing--*/
+    margin-left: 25px;
+    padding: 12px;
+    /*--edits--*/
+    outline: none;
+    /*--borders--*/
+    border: 3px solid #1c2a4b;
+    border-radius: 25px;
+}
+
+input[type=text]:focus {
+    border: 3px solid lawngreen;
+}
+
+#picture {
+    display: none;
+    text-decoration-color: white;
+}
+
+/*-------------------------------------------------skills-----------------------------------------------------------------------*/
+
+#skillers {
+    width: 50%;
+    margin: auto;
+    border: 5px solid #1c2a4b;
 }
 
 #skills {
     padding: 5px;
-    margin-left: 100px;
+    width: 100%;
 }
 
-#xp {
-    margin-left: 100px;
+.skill1 {
+    margin-left: 25px;
 }
 
-.xp4 {
-    margin-left: 86px;
+.skill {
+    margin-top: 12px;
+    width: 28%;
 }
-/*-------------------------------------------------------*/
-.input {
-    margin-left: 50%;
-}
-
-textarea {
-    resize: none;
-}
-
-.rating {
-    margin-left: 245px;
-}
-ul {
-    padding: 5px;
-}
-/*---------------------knoppen---------------------------*/
-.knop {
-    float: right;
-    margin-right: 150px;
-    margin-bottom: 30px;
-    padding: 20px;
-}
-/*-------------------------------------------------------*/
