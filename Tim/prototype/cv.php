@@ -36,7 +36,7 @@ if (isset($_POST['submit'])) {
 
     echo "<div class=container_content id=container_content>
 <link rel='stylesheet' href='cv.css'>
-<div id='center'>
+<div id='wrapper'>
 <h1>personal info</h1>
  first name: $firstname <br>
  insertion: $insertion <br>
