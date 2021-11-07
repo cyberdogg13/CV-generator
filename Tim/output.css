@@ -1,13 +1,42 @@
-#face{
-    border-radius: 0 50% 50% 50%;
+#wrapper {
+    width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid:
+            "top    top" 180px
+            "kolom1 kolom2" 500px
+            "bot bot" 150px
+    / 400px 600px;
 }
 
-#links{
-    float: left;
+#banner {
+    grid-area: top;
+    width: 1000px;
+    object-fit: fill;
 }
 
-#rechts{
-    width:50%
+#links {
+    padding-top: 30px;
+    padding-left: 50px;
+    grid-area: kolom1;
+}
 
+#rechts {
+    padding-right: 50px;
+    grid-area: kolom2;
+}
+
+hr {
+    color: red;
+}
+
+#face {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+#adres{
+    background-color: rebeccapurple;
+    border-radius: 0% 50% 50% 0%;
 }
 
