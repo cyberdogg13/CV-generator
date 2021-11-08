@@ -1,8 +1,6 @@
 <?php
 error_reporting(0);
 
-//:de link naar de style sheet
-echo '<link rel="stylesheet" type="text/css" href="index.css"></head>';
 
 //: variable aanmaken met als waarde wat er ingevult is in het form(zie textfield.html)
 if (isset($_POST['submit'])) {
@@ -31,39 +29,9 @@ if (isset($_POST['submit'])) {
     $personalskills1 = $_POST['personskills1'];
     $personalskills2 = $_POST['personskills2'];
     $personalskills3 = $_POST['personskills3'];
-
-
-
-    echo "<div class=container_content id=container_content>
-<link rel='stylesheet' href='cv.css'>
-<div id='wrapper'>
-<h1>personal info</h1>
- first name: $firstname <br>
- insertion: $insertion <br>
- Last name: $lastname <br>
- date of birth: $birth <br>
- city: $city  <br>
- streetname: $streetname  <br>
- postcode: $postcode  <br>
- hobbys: $hobby1  $hobby2   $hobby3 <br>
- profile: $profile <br>
- <br>
- <h1>contact info</h1>
- <br>
- E-mail: $email  <br>
- phonenumber: $phonenumber  <br>
- linkedin name: $linkedin  <br>
- <br>
- <h1>Education</h1>
- <br>
- work history: $workhistory1    $workhistory2   $workhistory3 <br>
- Education history: $education <br>
- personal skills: $personalskills1  $personalskills2   $personalskills3
- <br>
-</div>
- </div>";
-
 }
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -82,6 +50,12 @@ if (isset($_POST['submit'])) {
     <script src="https://cdn.apidelv.com/libs/awesome-functions/awesome-functions.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 
+    <style>
+        <?php include 'cv.css';
+         include '../css/all.css';
+         include '../css/all.min.css'; ?>
+    </style>
+
 
     <script type="text/javascript">
         $(document).ready(function ($) {
@@ -95,10 +69,9 @@ if (isset($_POST['submit'])) {
 
                 var opt =
                     {
-                        margin: 1,
                         filename: 'pageContent_' + js.AutoCode() + '.pdf',
                         image: {type: 'jpeg', quality: 0.98},
-                        html2canvas: {scale: 2},
+                        html2canvas: {scale: 1},
                         jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
                     };
 
@@ -115,16 +88,64 @@ if (isset($_POST['submit'])) {
 
 </head>
 <body>
+<div class="container_content" id="container_content">
+    <div id="wrapper">
+        <?php echo '<img src="cvbanner%20top.png" alt="banner" id="banner">' ?>
+
+        <div id="links">
+            <br>
+            <br>
+            <?php echo '<img src="face.jpg" alt="gezicht" id="face">' ?>
+            <br>
+            <br>
+            <br>
+            <div class="pointer" id="adres">
+              <p id="plekje"><?php echo $streetname ?><i class="fas fa-map-marker-alt fa-lg" id="marker"></i><br>
+                  <?php echo $city . $postcode ?>
+                </p>
+            </div>
+            <br>
+            <div class="pointer" id="phone">
+                <p><?php echo $phonenumber ?><i class="fas fa-phone-alt fa-lg"></i></p>
+            </div>
+            <br>
+            <div class="pointer" id="email">
+                <p>email <i class="fas fa-envelope fa-lg"></i></p>
+            </div>
+            <br>
+            <div class="pointer" id="website">
+                <p>date of birth <i class="fas fa-calendar fa-lg"></i></p>
+            </div>
+
+        </div>
+        <div id="rechts">
+            <h1> <?php echo $firstname ?> </h1>
+            <h1><?php echo $insertion . "\x20\x20\x20" . $lastname ?></h1>
+            <hr>
+            <h3>personal information</h3>
+            my hobbies are <br>
+            item 1 and item2 and item3 <br>
+
+            <h3>motivation</h3>
+            lul verhaal <br>
+            <h3>skills</h3>
+            my work history is: <br>
+            firts workplace <br>
+            seccond workplace <br>
+            third workplace <br>
+            <h3>certificates</h3>
+            lul verhaal
+            <h3>personal skills</h3>
+            item1 <br>
+            item2 <br>
+            item3 <br>
+        </div>
+        <?php echo '<img src="cvbanner%20bot.png" alt="footer" id="footer">' ?>
+    </div>
+</div>
 
 <div class="text-center" style="padding:20px;">
     <input type="button" id="rep" value="Print" class="btn btn-info btn_print">
 </div>
-
-
-<div class="container_content" id="container_content">
-
-</div>
-
-
 </body>
 </html>

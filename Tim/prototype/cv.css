@@ -1,10 +1,11 @@
 #wrapper {
+    padding-bottom: 52px;
+    margin: auto;
     width: 1000px;
-    margin: 20px auto;
     display: grid;
     grid:
             "top    top" 180px
-            "kolom1 kolom2"
+            "kolom1 kolom2" 674px
             "bot bot" 150px
     / 400px 600px;
 }
@@ -15,25 +16,25 @@
     object-fit: fill;
 }
 #footer{
-    padding-top: 50px;
+    padding-top: 10px;
     grid-area: bot;
     width: 1000px;
     object-fit: fill;
 }
 
 #links {
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 50px;
     grid-area: kolom1;
 }
 
 #rechts {
-    padding-right: 50px;
+    padding-left: 80px;
     grid-area: kolom2;
 }
 
 hr {
-    color: red;
+    background-color: red;
 }
 
 #face {
@@ -105,4 +106,10 @@ p{
     height: 0;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
+}
+#plekje{
+position: relative;bottom: 12px;
+}
+#marker{
+    position: relative;top: 12px;
 }
