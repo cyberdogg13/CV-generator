@@ -24,41 +24,57 @@
             </label>
 
             <label id="add"> No file added yet </label>
-            <br><br><br><br><br>
-            <!--first name-->
-            <label for="personal"> First Name: </label> <br>
-            <input class="person" type="text" name="voornaam">
-            <br><br>
-            <!--Insertion-->
-            <label for="personal"> Insertion: </label> <br>
-            <input class="person" type="text" name="Insertion">
-            <br><br>
-            <!--imput.lastname-->
-            <label for="personal"> Last Name: </label> <br>
-            <input class="person" type="text" name="achternaam">
-            <br><br>
+            <br><br><br><br><br><br>
+
+            <div id="names">
+                <!------------Labels--------->
+                <!--first name-->
+                <label class="firstname" for="personal"> First Name: </label>
+                <!--Insertion-->
+                <label class="insertion" for="personal"> Insertion: </label>
+                <!--imput.lastname-->
+                <label class="lastname" for="personal"> Last Name: </label>
+                <!------------input--------->
+                <!--firstname-->
+                <input class="person" type="text" name="voornaam">
+                <!--insertion-->
+                <input class="person" type="text" name="tussenvoegsel">
+                <!--imput.lastname-->
+                <input class="person" type="text" name="achternaam">
+                <br><br>
+            </div>
+
             <!--date of birth-->
             <label for="personal"> Date of birth: </label> <br>
             <input class="date" type="date" name="Date of birth">
-            <br><br>
-            <!--City-->
-            <label for="personal"> City: </label> <br>
-            <input class="person" type="text" name="City">
-            <br><br>
-            <!--Streetname-->
-            <label for="personal"> Street name: </label> <br>
-            <input class="person" type="text" name="streetname">
-            <br><br>
-            <!--Adress-->
-            <label for="personal"> Adress: </label> <br>
-            <input class="person" type="text" name="postcode">
-            <br><br>
-            <!--Hobby's-->
-            <label for="personal"> Hobby's: </label> <br>
-            <input class="person" type="text" name="Hobbys">
-            <input class="person" type="text" name="Hobbys">
-            <input class="person" type="text" name="Hobbys">
-            <br><br>
+            <br><br><br><br>
+
+            <div id="location">
+                <!------------Labels--------->
+                <!--City-->
+                <label class="city" for="personal"> City: </label>
+                <!--streetname-->
+                <label class="street" for="personal"> Street name: </label>
+                <!--Adress-->
+                <label class="postcode" for="personal"> Postcode: </label>
+                <!------------input--------->
+                <!--City-->
+                <input class="person" type="text" name="City">
+                <!--Streetname-->
+                <input class="person" type="text" name="streetname">
+                <!--Postcode-->
+                <input class="person" type="text" name="postcode">
+                <br><br>
+            </div>
+
+            <div id="hobby">
+                <!--Hobby's-->
+                <label for="personal"> Hobby's: </label> <br>
+                <input class="person" type="text" name="Hobbys">
+                <input class="person" type="text" name="Hobbys">
+                <input class="person" type="text" name="Hobbys">
+                <br><br>
+            </div>
             <!--Motivation.textarea-->
             <label class="personal" for="personal"> Motivation: </label>
             <br>
@@ -69,18 +85,22 @@
 
     <section id="contacts">
         <div id="contact">
+            <!---------Labels-------->
             <h2> Contact info: </h2> <br>
             <!--Email-->
-            <label for="contact"> Email: </label> <br>
-            <input class="cont" type="text" name="email">
-            <br><br>
+            <label class="email "for="contact"> Email: </label>
             <!--phonenumber-->
-            <label for="contact"> Telephone: </label> <br>
-            <input class="cont" type="text" name="telephone">
-            <br><br>
+            <label class="telephone" for="contact"> Telephone: </label>
             <!--linkedin-->
-            <label for="contact"> Linkedin ID: </label> <br>
-            <input class="cont" type="text" name="Linkedin"> <br>
+            <label class="linkedin" for="contact"> Linkedin ID: </label>
+
+            <!-------input--------->
+            <!--email-->
+            <input class="cont" type="text" name="email">
+            <!--phonenumber-->
+            <input class="cont" type="text" name="telephone">
+            <!--Linkedin-->
+            <input class="cont" type="text" name="Linkedin">
             <br><br>
         </div>
     </section>
