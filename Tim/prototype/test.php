@@ -1,22 +1,56 @@
+<?php
+error_reporting(0);
+
+$firstname = $_POST['first'];
+$insertion = $_POST['insertion'];
+$lastname = $_POST['last'];
+$birth = $_POST['birth'];
+$city = $_POST['city'];
+$streetname = $_POST['street'];
+$postcode = $_POST['postcode'];
+$hobby1 = $_POST['hobby1'];
+$hobby2 = $_POST['hobby2'];
+$hobby3 = $_POST['hobby3'];
+$profile = $_POST['motivation'];
+
+$email = $_POST['email'];
+$phonenumber = $_POST['phone'];
+$linkedin = $_POST['linkedin'];
+
+$workhistory1 = $_POST['workhostory1'];
+$workhistory2 = $_POST['workhostory2'];
+$workhistory3 = $_POST['workhostory3'];
+$education = $_POST['certificates'];
+$personalskills1 = $_POST['personskills1'];
+$personalskills2 = $_POST['personskills2'];
+$personalskills3 = $_POST['personskills3'];
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title> scrum opdracht </title>
-    <link href="output.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.css">
 
+    <style>
+        <?php include '../output.css';
+         include '../css/all.css';
+         include '../css/all.min.css'; ?>
+    </style>
 
 
 </head>
 <body>
 <div id="wrapper">
-    <img src="img/cvbanner%20top.png" alt="banner" id="banner">
+    <?php echo '<img src="cvbanner%20top.png" alt="banner" id="banner">' ?>
 
     <div id="links">
         <br>
         <br>
-        <img src="img/face.jpg" alt="gezicht" id="face">
+        <?php echo '<img src="face.jpg" alt="gezicht" id="face">' ?>
         <br>
         <br>
         <br>
@@ -24,11 +58,11 @@
         <div class="pointer" id="adres">
             <table>
                 <tr>
-                    <td>adres</td>
-                    <td rowspan="2" ><i class="fas fa-map-marker-alt fa-lg"></i></td>
+                    <td><?php echo $streetname ?></td>
+                    <td rowspan="2"><i class="fas fa-map-marker-alt fa-lg"></i></td>
                 </tr>
                 <tr>
-                    <td>postcode and city</td>
+                    <td><?php echo $city. $postcode ?></td>
                 </tr>
             </table>
         </div>
@@ -40,7 +74,7 @@
         <br>
         <br>
         <div class="pointer" id="email">
-            <p>email <i class="fas fa-envelope fa-lg"></i> </p>
+            <p>email <i class="fas fa-envelope fa-lg"></i></p>
         </div>
         <br>
         <br>
@@ -50,8 +84,8 @@
 
     </div>
     <div id="rechts">
-        <h1>voornaam</h1>
-        <h1>achternaam</h1>
+        <h1> <?php echo $firstname ?> </h1>
+        <h1><?php echo $insertion . "\x20\x20\x20" . $lastname ?></h1>
         <hr>
         <h3>personal information</h3>
         my hobbies are <br>
@@ -80,7 +114,7 @@
         item2 <br>
         item3 <br>
     </div>
-    <img src="img/cvbanner%20bot.png" alt="footer" id="footer">
+    <?php echo '<img src="cvbanner%20bot.png" alt="footer" id="footer">' ?>
 </div>
 </body>
 </html>

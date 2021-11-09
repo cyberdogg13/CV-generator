@@ -1,91 +1,115 @@
-* {
-    box-sizing: border-box;
-    font-family: "Arial", "sans-serif";
+#wrapper {
+    padding-bottom: 52px;
+    margin: auto;
+    width: 1000px;
+    display: grid;
+    grid:
+            "top    top" 180px
+            "kolom1 kolom2" 674px
+            "bot bot" 150px
+    / 400px 600px;
 }
 
-body {
-    background-color: white;
-    margin-top: 0px;
+#banner {
+    grid-area: top;
+    width: 1000px;
+    object-fit: fill;
 }
-
-@media all and (min-width: 1000px) {
-    section#center {
-        width: 1000px;
-        margin: auto;
-    }
-}
-
-div#center {
+#footer{
     padding-top: 10px;
-    padding-bottom: 20px;
-    border-left: 10px solid #1c2a4b;
-    border-right: 10px solid #1c2a4b;
-    background-image: linear-gradient(to right,lightcyan, aliceblue , lightcyan);
+    grid-area: bot;
+    width: 1000px;
+    object-fit: fill;
 }
 
-/*--------------------------------------------------------*/
-h3 {
-    font-weight: bold;
+#links {
+    padding-top: 10px;
+    padding-left: 50px;
+    grid-area: kolom1;
 }
 
-.fill {
-    text-align: center;
+#rechts {
+    padding-left: 80px;
+    grid-area: kolom2;
 }
 
-#div {
-    font-size: 50px;
-    text-align: center;
-    color: black;
-    border-bottom: 10px solid #1c2a4b;
-    margin: -1px;
-    padding-bottom: 10px;
+hr {
+    background-color: red;
 }
 
-/*----------------Fatoren--------------------------------*/
-#personal {
-    margin-left: 100px;
+#face {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 
-#contact {
-    margin-left: 100px;
+i{
+    text-align: right;
+    padding-left: 80px;
+}
+table{
+    padding-left: 70px;
+}
+p{
+    padding-top: 13px;
+    padding-left: 70px;
+}
+#adres{
+    background-color: rebeccapurple;
+}
+#adres.pointer:before{
+    border-left: 20px solid rebeccapurple;
+}
+#phone{
+    background-color: purple;
+}
+#phone.pointer:before{
+    border-left: 20px solid purple;
+}
+#email{
+    background-color: deeppink;
+}
+#email.pointer:before{
+    border-left: 20px solid deeppink;
+}
+#website{
+    background-color: orangered;
+}
+#website.pointer:before{
+    border-left: 20px solid orangered;
 }
 
-#education {
-    margin-left: 100px;
+.pointer {
+    width: 300px;
+    height: 50px;
+    position: relative;
 }
 
-#skills {
-    padding: 5px;
-    margin-left: 100px;
+.pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
 }
 
-#xp {
-    margin-left: 100px;
+.pointer:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
 }
-
-.xp4 {
-    margin-left: 86px;
+#plekje{
+position: relative;bottom: 12px;
 }
-/*-------------------------------------------------------*/
-.input {
-    margin-left: 50%;
+#marker{
+    position: relative;top: 12px;
 }
-
-textarea {
-    resize: none;
-}
-
-.rating {
-    margin-left: 245px;
-}
-ul {
-    padding: 5px;
-}
-/*---------------------knoppen---------------------------*/
-.knop {
-    float: right;
-    margin-right: 150px;
-    margin-bottom: 30px;
-    padding: 20px;
-}
-/*-------------------------------------------------------*/
