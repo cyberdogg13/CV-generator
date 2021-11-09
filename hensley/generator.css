@@ -1,36 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200, 300, 400, 500, 600, 700, 800, 900&display=swap');
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
 }
+
 body {
-background: black;
-display: flex;
-justify-content: center;
-align-items: center;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container
-{
-   position: relative;
-   width: 100%;
-   max-width: 1000px;
-   min-height: 1500px;
-   background: #ffffff;
-   margin: 50px;
-   display: grid;
-   grid-template-columns: 1fr 2fr;
-   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1300px;
+    background: #ffffff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
-.container .left_side{
+.container .left_side {
     position: relative;
     background: #003147;
     padding: 40px;
 }
+
 .profiel_text {
     position: relative;
     display: flex;
@@ -39,6 +41,7 @@ align-items: center;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 .profiel_text .imagebox {
     position: relative;
     width: 200px;
@@ -46,7 +49,8 @@ align-items: center;
     border-radius: 50%;
     overflow: hidden;
 }
-.profiel_text .imagebox image{
+
+.profiel_text .imagebox image {
     position: absolute;
     top: 0;
     left: 0;
@@ -54,42 +58,204 @@ align-items: center;
     height: 100%;
     object-fit: cover;
 }
-.profiel_text h2{
+
+.profiel_text h2 {
     color: #ffffff;
     font-size: 1.5em;
     margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
 }
-.profiel_text h2 span{
+
+.profiel_text h2 span {
     font-size: 0.8em;
     font-weight: 300;
 }
 
-
-.container .right_side{
-    position: relative;
-    background: #003147;
-    padding: 40px;
-}
 .contact-info {
     padding-top: 40px;
 }
-.contact-info ul{
+
+.title {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
     position: relative;
 }
-.contact-info ul li{
-    padding-top: 20px;
+
+.contactInfo ul li {
     position: relative;
-/*list style: none* voor geen icoontjes voor de tekst in de ul li*/
+    /*list style: none* voor geen icoontjes voor de tekst in de ul li*/
+    list-style: none;
     margin: 10px 0;
     cursor: pointer;
 }
 
-.title {
-color: #BB1100;
-text-transform: uppercase;
-font-weight: 600;
-letter-spacing: 1px;
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 21px;
+    color: #71dd8a;
 }
+
+.contactInfo ul li span {
+    color: #FFFFFF;
+    font-weight: 300;
+}
+
+.contactInfo.education li {
+    margin-bottom: 15px;
+
+}
+
+.contactInfo.education h5 {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2) {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.contactInfo.education h4 {
+    color: #FFFFFF;
+    font-weight: 300;
+}
+
+.contactInfo.language .percent {
+    position: relative;
+    width: 100%;
+    height: 9px;
+    background: #b21f2d;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #71dd8a;
+}
+
+.container .right_Side {
+    position: relative;
+    background: #FFFFFF;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: black;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year-company {
+    min-width: 150px;
+}
+
+.about .box .year-company h5 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+}
+
+.about .text h4 {
+    text-transform: uppercase;
+    color: #71dd8a;
+    font-size: 16px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #b21f2d;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #71dd8a;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: #71dd8a;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fa-television {
+    color: black;
+}
+
+.interest ul li .fa-gamepad {
+    color: darkblue;
+}
+
+.interest ul li .fa-laptop {
+    color: #b21f2d;
+}
+
+.interest ul li .fa-spotify {
+    color: yellowgreen;
+}
+
+
+
+
+
 
 
 

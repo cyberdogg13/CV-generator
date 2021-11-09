@@ -44,6 +44,7 @@ hr {
 }
 
 i{
+    position: absolute;
     text-align: right;
     padding-left: 80px;
 }
@@ -52,7 +53,7 @@ table{
 }
 p{
     padding-top: 13px;
-    padding-left: 70px;
+    padding-left: 40px;
 }
 #adres{
     background-color: rebeccapurple;
@@ -112,4 +113,8 @@ position: relative;bottom: 12px;
 }
 #marker{
     position: relative;top: 12px;
+}
+#briefje{
+    bottom: 15px;
+    right: 70px;
 }
