@@ -9,8 +9,8 @@
 }
 
 body {
-    font-family: sans-serif, Arial;
-    Background-image: linear-gradient(360deg, #DBCBF4, #D9E8F4);
+    font-family: Georgia;
+    Background-image: linear-gradient(360deg, #C6C6C6, white);
 }
 
 h2 {
@@ -31,15 +31,15 @@ div#names {
 }
 
 .firstname {
-    margin-left: 2vw;
+    margin-left: 1.5vw;
 }
 
 .insertion {
-    margin-left: 9vw;
+    margin-left: 10vw;
 }
 
 .lastname {
-    margin-left: 10.5vw;
+    margin-left: 11vw;
 }
 /*-----------------------------------------------------------------------------*/
 
@@ -52,7 +52,7 @@ div#names {
 }
 
 .city {
-    margin-left: 1.75vw;
+    margin-left: 1.5vw;
 }
 
 .street {
@@ -60,7 +60,7 @@ div#names {
 }
 
 .postcode {
-    margin-left: 8.5vw;
+    margin-left: 10vw;
 }
 
 /*-----------------------------------------------------------------------------*/
@@ -76,7 +76,7 @@ div#names {
 }
 
 .email {
-    margin-left: 1.75vw;
+    margin-left: 1.5vw;
 }
 
 .telephone {
@@ -85,7 +85,7 @@ div#names {
 }
 
 .linkedin {
-    margin-left: 9.5vw;
+    margin-left: 10.3vw;
 }
 
 /*-----------------------------------------------------------------------------*/
@@ -99,18 +99,18 @@ section {
     margin-left: 25px;
     padding: 20px;
     /*--edits--*/
-    border-radius: 25px;
-    color: #415969;
+    color: black;
     /*--borders--*/
     background-color: white;
-    border: 3px solid #415969;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
 .file-upload:hover {
-    background-color: #415969;
+    background-color: darkgrey;
     color: white ;
     cursor: pointer;
-    border: 3px solid white;
+    border: 2px solid darkgrey;
 }
 
 .label, file-upload {
@@ -127,8 +127,8 @@ section {
     text-overflow: ellipsis;
     white-space: nowrap;
     /*--borders--*/
-    border: 3px solid #415969;
-    border-radius: 25px;
+    border-radius: 10px;
+    border: 2px solid darkgrey;
 }
 
 /*-------------------------------Personal-header--------------------------------------------------------------------------------*/
@@ -147,7 +147,7 @@ section {
     /*--borders--*/
     color: white;
     border-bottom: 3px solid black ;
-    background-color: #14133C;
+    background-color: darkgrey;
 }
 
 /*------------------------------------------------personal------------------------------------------------------------------------*/
@@ -157,7 +157,8 @@ section {
     margin: auto;
     width: 50%;
     /*--borders--*/
-    border: 5px solid darkgrey;
+    border: 2px solid black;
+    border-bottom: 2px solid darkgrey;
 }
 
 .person {
@@ -165,8 +166,8 @@ section {
     width: 28%;
     margin-top: 12px;
     /*--borders--*/
-    border: 3px solid grey;
-    border-radius: 25px;
+    border: 2px solid grey;
+    border-radius: 10px;
 }
 
 /*------------------------------------------------personal-text------------------------------------------------------------------------*/
@@ -182,7 +183,7 @@ textarea {
     font-family: sans-serif, Arial;
     resize: none;
     /*--borders--*/
-    border: 3px solid grey;
+    border: 2px solid grey;
     border-radius: 15px;
 }
 
@@ -190,7 +191,7 @@ textarea:focus {
     /*--edits--*/
     font-family: sans-serif, Arial;
     /*--borders--*/
-    border: 3px solid #004877;
+    border: 2px solid #004877;
 }
 
 /*------------------------------------------------Contact------------------------------------------------------------------------*/
@@ -200,7 +201,9 @@ textarea:focus {
     width: 50%;
     margin: auto;
     /*--borders--*/
-    border: 5px solid darkgrey;
+    border: 2px solid black;
+    border-top: 2px solid darkgrey;
+    border-bottom: 2px solid darkgrey;
 }
 
 .contact, label {
@@ -218,12 +221,12 @@ textarea:focus {
     margin-left: 25px;
     margin-top: 10px;
     /*--borders--*/
-    border-radius: 25px;
-    border: 3px solid grey;
+    border-radius: 10px;
+    border: 2px solid grey;
 }
 
 .date:focus {
-    border: 3px solid #004877;
+    border: 2px solid #004877;
     padding: 8px;
 }
 
@@ -233,16 +236,17 @@ input {
     /*--sizing--*/
     width: 28%;
     margin-left: 25px;
+    margin-top: 12px;
     padding: 12px;
     /*--edits--*/
     outline: none;
     /*--borders--*/
-    border: 3px solid grey;
-    border-radius: 25px;
+    border: 2px solid grey;
+    border-radius: 10px;
 }
 
 input[type=text]:focus {
-    border: 3px solid #004877;
+    border: 2px solid #004877;
 }
 
 #picture {
@@ -255,7 +259,8 @@ input[type=text]:focus {
 #skillers {
     width: 50%;
     margin: auto;
-    border: 5px solid darkgrey;
+    border: 2px solid black;
+    border-top: 2px solid darkgrey;
 }
 
 #skills {
