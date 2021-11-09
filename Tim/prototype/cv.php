@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+// error_reporting(0);
 
 
 //: variable aanmaken met als waarde wat er ingevult is in het form(zie textfield.html)
@@ -22,13 +22,13 @@ if (isset($_POST['submit'])) {
     $phonenumber = $_POST['phone'];
     $linkedin = $_POST['linkedin'];
 
-    $workhistory1 = $_POST['workhostory1'];
-    $workhistory2 = $_POST['workhostory2'];
-    $workhistory3 = $_POST['workhostory3'];
+    $workhistory1 = $_POST['workhistory1'];
+    $workhistory2 = $_POST['workhistory2'];
+    $workhistory3 = $_POST['workhistory3'];
     $education = $_POST['certificates'];
-    $personalskills1 = $_POST['personskills1'];
-    $personalskills2 = $_POST['personskills2'];
-    $personalskills3 = $_POST['personskills3'];
+    $personalskills1 = $_POST['personalskills1'];
+    $personalskills2 = $_POST['personalskills2'];
+    $personalskills3 = $_POST['personalskills3'];
 }
 
 
@@ -110,11 +110,11 @@ if (isset($_POST['submit'])) {
             </div>
             <br>
             <div class="pointer" id="email">
-                <p>email <i class="fas fa-envelope fa-lg"></i></p>
+                <p><?php echo $email ?> <i class="fas fa-envelope fa-lg" id="briefje"></i></p>
             </div>
             <br>
             <div class="pointer" id="website">
-                <p>date of birth <i class="fas fa-calendar fa-lg"></i></p>
+                <p><?php echo $birth ?> <i class="fas fa-calendar fa-lg"></i></p>
             </div>
 
         </div>
@@ -124,21 +124,21 @@ if (isset($_POST['submit'])) {
             <hr>
             <h3>personal information</h3>
             my hobbies are <br>
-            item 1 and item2 and item3 <br>
-
+            <?php echo $hobby1 . "\x20\x20\x20" . $hobby2 . "\x20\x20\x20" . $hobby3 ?>
+            <br>
             <h3>motivation</h3>
-            lul verhaal <br>
+            <?php echo $profile ?> <br>
             <h3>skills</h3>
-            my work history is: <br>
-            firts workplace <br>
-            seccond workplace <br>
-            third workplace <br>
+            my work history<br>
+            <?php echo $workhistory1 ?> <br>
+            <?php echo $workhistory2 ?> <br>
+            <?php echo $workhistory3 ?> <br>
             <h3>certificates</h3>
-            lul verhaal
+            <?php echo $education ?>
             <h3>personal skills</h3>
-            item1 <br>
-            item2 <br>
-            item3 <br>
+            <?php echo $personalskills1 ?> <br>
+            <?php echo $personalskills2 ?> <br>
+            <?php echo $personalskills3 ?> <br>
         </div>
         <?php echo '<img src="cvbanner%20bot.png" alt="footer" id="footer">' ?>
     </div>
