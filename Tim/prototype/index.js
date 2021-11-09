@@ -1,3 +1,5 @@
+
+
 function getFoto() {
 
     console.log("picture");

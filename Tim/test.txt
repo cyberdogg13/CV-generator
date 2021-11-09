@@ -1,1 +1,39 @@
-een heleboel dingen
+<table id="adres">
+            <tr>
+                <td>adres</td>
+                <td rowspan="2" ><i class="fas fa-map-marker-alt"></i></td>
+            </tr>
+            <tr>
+                <td>city</td>
+            </tr>
+        </table>
+
+
+        echo "<div class=container_content id=container_content>
+        <link rel='stylesheet' href='cv.css'>
+        <div id='wrapper'>
+        <h1>personal info</h1>
+         first name: $firstname <br>
+         insertion: $insertion <br>
+         Last name: $lastname <br>
+         date of birth: $birth <br>
+         city: $city  <br>
+         streetname: $streetname  <br>
+         postcode: $postcode  <br>
+         hobbys: $hobby1  $hobby2   $hobby3 <br>
+         profile: $profile <br>
+         <br>
+         <h1>contact info</h1>
+         <br>
+         E-mail: $email  <br>
+         phonenumber: $phonenumber  <br>
+         linkedin name: $linkedin  <br>
+         <br>
+         <h1>Education</h1>
+         <br>
+         work history: $workhistory1    $workhistory2   $workhistory3 <br>
+         Education history: $education <br>
+         personal skills: $personalskills1  $personalskills2   $personalskills3
+         <br>
+        </div>
+         </div>";

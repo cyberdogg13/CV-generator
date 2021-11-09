@@ -2,113 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> scrum opdracht </title>
+    <title> Form2 </title>
     <link href="index.css" rel="stylesheet">
+    <script src="index.js"></script>
+
 </head>
-     <body>
+<body>
+<header>
+    <h1 class="persona"> Personal </h1>
+</header>
 
-     <form id="center" name="input" action="cv.php" method="post">
-          <section id="header">
-              <h1 id="form"> CV Generator </h1>
-          </section> <br><br>
-         <h2 class="fill"> Fill in the form below.</h2><br>
-         <section id="personal">
-             <!--input.voornaam-->
-             <h3> Personal info: </h3>
-             <label for="personal"> First Name: </label>
-             <input class="personal" type="text" name="first">
-             <br><br>
-             <!--imput.achternaam-->
-             <label for="personal"> Last Name: </label>
-             <input class="personal" type="text" name="last">
-             <br><br>
-             <!--geboorte-->
-             <label for="personal"> Date of birth: </label>
-             <input class="personal" type="date" name="birth">
-             <br><br>
-             <!--stad-->
-             <label for="personal"> City: </label>
-             <input class="personal" type="text" name="city">
-             <br><br>
-             <!--srtaatnaam-->
-             <label for="personal"> Street name: </label>
-             <input class="personal" type="text" name="street">
-             <br><br>
-             <!--postcode-->
-             <label for="personal"> Postcode: </label>
-             <input class="personal" type="text" name="postcode">
-             <br><br>
-             <!--profile.textarea-->
-             <label class="profile" for="personal"> Profile: </label>
-             <br>
-             <textarea rows="6" cols="50" name="profile"> </textarea>
-             <br><br>
-         </section>
 
-         <!--Contact-->
-         <section  id="contact">
-             <h3> Contact info: </h3>
-             <br>
-             <!--input.email-->
-             <label for="contact"> Email: </label>
-             <input class="contact" type="text" name="email">
-             <br><br>
-             <!--phonenumber-->
-             <label for="contact"> Telephone: </label>
-             <input class="contact" type="text" name="phone"><br><br>
-             <!--linkedin-->
-             <label for="contact"> Linkedin name: </label>
-             <input class="contact" type="text" name="linkedin"><br><br><br>
-         </section>
+<form action="cv.php" method="post">
+    <section id="pers">
+        <div id="personal">
+            <h2> Personal info </h2> <br><br><br>
 
-         <!--education-->
-         <section id="education">
-             <h3> Education: </h3>
-             <!-- All schools-->
-             <label for="education"> Education history: </label><br>
-             <textarea rows="4" cols="20" name="education"> </textarea><br><br>
-             <!--Certificates-->
-             <label for="contact"> Certificates: </label><br>
-             <textarea  rows="8" cols="30" name="telephone"></textarea><br><br>
-             <br><br>
-         </section>
+            <!--add picture file-->
+            <label class="file-upload">
+                <input id="picture" type="file" onchange="getFoto()" name="foto"/>
+                Click to add picture
+            </label>
 
-         <!--werkervaring-->
-         <section id="xp">
-             <h3> Work experience:</h3>
-             <Label for="xp"> Work history/companies: </Label><br>
-             <textarea rows="6" cols="50"> </textarea>
-         </section>
+            <label id="add"> No file added yet </label>
+            <br><br><br><br><br>
+            <!--first name-->
+            <label for="personal"> First Name: </label> <br>
+            <input class="person" type="text" name="first">
+            <br><br>
+            <!--Insertion-->
+            <label for="personal"> Insertion: </label> <br>
+            <input class="person" type="text" name="insertion">
+            <br><br>
+            <!--imput.achternaam-->
+            <label for="personal"> Last Name: </label> <br>
+            <input class="person" type="text" name="last">
+            <br><br>
+            <!--geboorte-->
+            <label for="personal"> Date of birth: </label> <br>
+            <input class="date" type="date" name="birth">
+            <br><br>
+            <!--City-->
+            <label for="personal"> City: </label> <br>
+            <input class="person" type="text" name="city">
+            <br><br>
+            <!--Streetname-->
+            <label for="personal"> Street name: </label> <br>
+            <input class="person" type="text" name="street">
+            <br><br>
+            <!--Adress-->
+            <label for="personal"> postcode: </label> <br>
+            <input class="person" type="text" name="postcode">
+            <br><br>
+            <!--Hobby's-->
+            <label for="personal"> Hobby's: </label> <br>
+            <input class="person" type="text" name="hobby1">
+            <input class="person" type="text" name="hobby2">
+            <input class="person" type="text" name="hobby3">
+            <br><br>
+            <!--Motivation.textarea-->
+            <label class="personal" for="personal"> Motivation: </label>
+            <br>
+            <textarea rows="7" cols="50" name="motivation"> </textarea>
+            <br><br>
+        </div>
+    </section>
 
-         <!--skills-->
-         <section id="skills">
-             <h3> Skills: </h3>
-             <label for="skills"> Skills: </label> <label class="rating"> level 0/100%: </label><br>
-             <input class="rate1" type="text"size="30"> - <input type="text" maxlength="3" size="1"> % <br><br>
-             <input class="rate2" type="text"size="30"> - <input type="text" maxlength="3" size="1"> % <br><br>
-             <input class="rate3" type="text"size="30"> - <input type="text" maxlength="3" size="1"> % <br><br>
-             <input class="rate4" type="text"size="30"> - <input type="text" maxlength="3" size="1"> % <br><br>
-             <input class="rate5" type="text"size="30"> - <input type="text" maxlength="3" size="1"> % <br><br>
-             <label for="skills"> Characteristics </label>
-             <ul>
-                 <li> <input type="text"> </li>
-                 <li> <input type="text"> </li>
-                 <li> <input type="text"> </li>
-                 <li> <input type="text"> </li>
-                 <li> <input type="text"> </li>
-             </ul>
+    <section id="contacts">
+        <div id="contact">
+            <h2> Contact info: </h2> <br>
+            <!--Email-->
+            <label for="contact"> Email: </label> <br>
+            <input class="cont" type="text" name="email">
+            <br><br>
+            <!--phonenumber-->
+            <label for="contact"> Telephone: </label> <br>
+            <input class="cont" type="text" name="phone">
+            <br><br>
+            <!--linkedin-->
+            <label for="contact"> Linkedin ID: </label> <br>
+            <input class="cont" type="text" name="linkedin"> <br>
+            <br><br>
+        </div>
+    </section>
 
-             <!--hobbys-->
-             <label for="skills"> Hobby's: </label><br>
-             <input class="hobby1" type="text" size="20">
-             <input class="hobby2" type="text" size="20">
-             <input class="hobby3" type="text" size="20">
-             <input class="hobby4" type="text" size="20">
-             <br><br>
+    <section id="skillers">
+        <div id="skills">
+            <h2> Skills: </h2>
+            <br>
+            <!--work history-->
+            <label for="skills"> Work History: </label> <br>
+            <input class="skill" type="text" name="workhistory1">
+            <input class="skill" type="text" name="workhistory2">
+            <input class="skill" type="text" name="workhistory3">
+            <br>
+            <br>
+            <!--certificates/education-->
+            <label for="skills"> Certificates: </label> <br>
+            <textarea rows="6" cols="30" name="certificates"> </textarea> <br><br>
+            <!--personal skills-->
+            <label for="skills"> personal Skills: </label> <br>
+            <input class="skill" type="text" name="personalskills1">
+            <input class="skill" type="text" name="personalskills2">
+            <input class="skill" type="text" name="personalskills3">
+            <br><br>
+            <p><input type="submit" name="submit" value="submit"/> </p>
+        </div>
+    </section>
+</form>
+<br> <br>
+<footer>
+</footer>
 
-             <!--knop-->
-             <p><input type="submit" name="submit" value="submit"/> </p>
-     </section>
-     </form>
-     </body>
+</body>
 </html>
+
+<!--- ik heb alle elementen toegevoegd in het invul formulier --->
+<!-- achtergrond toevoegen-->
