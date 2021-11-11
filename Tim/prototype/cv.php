@@ -20,7 +20,6 @@ if (isset($_POST['submit'])) {
 
     $email = $_POST['email'];
     $phonenumber = $_POST['phone'];
-    $linkedin = $_POST['linkedin'];
 
     $workhistory1 = $_POST['workhistory1'];
     $workhistory2 = $_POST['workhistory2'];

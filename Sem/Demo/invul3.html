@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cv</title>
+    <link rel="stylesheet" href="css/invul.css">
+</head>
+<body>
+<div class="Back">
+    <form name="form" action="cvhen.php" method="post">
+        <fieldset>
+            <!--input.voornaam-->
+            <legend>Personal info</legend>
+            <label> First Name: </label>
+            <input class="personal" type="text" name="voornaam">
+            <br><br>
+            <!--imput.achternaam-->
+            <label> Last Name: </label>
+            <input class="personal" type="text" name="achternaam">
+            <br><br>
+            <!--geboorte-->
+            <label> Date of birth: </label>
+            <input class="personal" type="date" name="geboortedatum">
+            <br><br>
+            <!--stad-->
+            <label> City: </label>
+            <input class="personal" type="text" name="City"><br><br>
+            <!--srtaatnaam-->
+            <label> Street name: </label>
+            <input class="personal" type="text" name="streetname">
+            <br><br>
+            <!--postcode-->
+            <label> Postcode: </label>
+            <input class="personal" type="text" name="postcode">
+            <br><br>
+            <!--profile.textarea-->
+            <Label> profile: </Label><br>
+            <textarea  rows="8" cols="30" name="profiel"></textarea>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact info</legend>
+            <label> Email: </label>
+            <input class="contact" type="text" name="email">
+            <br><br>
+            <!--phonenumber-->
+            <label> Telephone: </label>
+            <input class="contact" type="text" name="telephone"><br><br>
+            <!--linkedin-->
+            <label> Linkedin name: </label>
+            <input class="contact" type="text" name="Linkedin"><br><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label> Education/Certificates: </label><br>
+            <textarea  rows="8" cols="30" name="cert"></textarea><br><br>
+            <label>time frame</label>
+            <input class="contact" type="text" name="time">
+        </fieldset>
+
+        <fieldset>
+            <legend>Work Experience</legend>
+            <Label> Work history/companies: </Label><br>
+            <textarea  rows="8" cols="30" name="experience"></textarea>
+        </fieldset>
+
+        <p class="button"><input type="submit" name="submit" value="submit"/> </p>
+    </form>
+</div>
+</body>
+</html>
