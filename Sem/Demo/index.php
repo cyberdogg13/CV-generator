@@ -51,22 +51,22 @@
    }
     </style>
 <body>
-<div class="line"> <h3 class="roeptext">Kies een template</h3> </div>
+<div class="line"> <h3 class="roeptext">Choose a template</h3> </div>
 <div class="center">
 <div class="body">
 <div class="cv1">
     <img src="img/cv1.png" alt="cv1" class="img1">
-    <a href="invul.html" class="Btn btn1">Cv 1</a>
+    <a href="invul.html" class="Btn btn1">CV 1</a>
 </div>
 
 <div class="cv2">
     <img src="img/krant.png" alt="cv2" class="img2">
-    <a href="invul2.html" class="Btn btn1">Cv 2</a>
+    <a href="invul2.html" class="Btn btn1">CV 2</a>
 </div>
 
 <div class="cv3">
     <img src="img/cvhen.png" alt="cv3" class="img2">
-    <a href="invul3.html" class="Btn btn1">Cv 3</a>
+    <a href="invul3.html" class="Btn btn1">CV 3</a>
 </div>
 </div>
 </div>
