@@ -1,4 +1,9 @@
-body{
+* {
+    text-transform: uppercase;
+    font-family: 'Garamond', Times Serif;
+}
+
+body {
     background: silver;
     /*
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
@@ -6,57 +11,69 @@ body{
 }
 
 .Btn {
-    box-shadow:inset 0px 0px 15px 3px #23395e;
-    background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
-    background-color:#2e466e;
-    border-radius:17px;
-    border:1px solid #1f2f47;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:18px;
-    padding:6px 13px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #263666;
+    box-shadow: inset 0px 0px 15px 3px #16181b;
+    background: linear-gradient(to bottom, #747f8a 5%, #16181b 100%);
+    background-color: #16181b;
+    border-radius: 17px;
+    border: 1px solid;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 6px 13px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b21f2d;
     letter-spacing: 2px;
 }
+
 .Btn:hover {
-    background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
-    background-color:#415989;
+    background: linear-gradient(to bottom, #b21f2d 5%, #16181b 100%);
+    background-color: #747f8a;
 }
+
 .cv1 {
-max-width: 200px;
-text-align: center;
+    max-width: 200px;
+    text-align: center;
     margin-left: 20%;
 }
-.img1{
+
+.img1 {
+    box-shadow: inset 0px 0px 15px 3px #b21f2d;
+    box-shadow: #b21f2d;
+    border: 1px solid #b21f2d;
     height: 350px;
-    width:225px;
+    width: 225px;
     text-align: left;
     margin-bottom: 10px;
 }
-.roeptext{
-    font-family:sans-serif ;
+
+.roeptext {
+    font-family: sans-serif;
     text-align: center;
     font-size: 100px;
 }
-.line{
-    border-bottom: grey 2px solid;
+
+.line {
+    border-bottom: grey 1px solid;
     border-radius: 1px;
     margin-bottom: 30px;
 }
-.cv2{
+
+.cv2 {
     max-width: 200px;
     text-align: center;
     margin-left: 40%;
     margin-top: -343px;
 }
-.img2{
+
+.img2 {
     height: 350px;
-    width:225px;
+    width: 225px;
     text-align: left;
     margin-bottom: 10px;
+    box-shadow: #b21f2d;
+    border: 1px solid #b21f2d;
+    box-shadow: inset 0px 0px 15px 3px #b21f2d;
 }
 
 .cv3 {
@@ -66,13 +83,15 @@ text-align: center;
     margin-top: -341px;
 
 }
+
 .start {
     border-bottom: grey 3px solid;
     text-align: center;
     height: 100%;
-    width:100%;
+    width: 100%;
 }
-.center{
+
+.center {
     text-align: center;
     padding-left: 5%;
 }

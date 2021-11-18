@@ -1,0 +1,47 @@
+* {
+    background-color: silver;
+    letter-spacing: 2px;
+}
+
+.container {
+    padding-left: 150px;
+    padding-top: 15px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 40px;
+    color: black;
+}
+
+.container h3 {
+    font-size: 30px;
+    color: #b21f2d;
+}
+
+.container ol {
+    color: #b21f2d;
+    font-size: 20px;
+}
+
+.container ol li {
+    padding-top: 25px;
+    color: orangered;
+    /*list-style: none;*/
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+}
+
+a:hover {
+    color: tomato;
+}
+
+p {
+    padding-top: 15px;
+    color: orangered;
+}
