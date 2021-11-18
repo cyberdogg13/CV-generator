@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title> Form2 </title>
     <link href="index.css" rel="stylesheet">
-    <script src="formscript.js"></script>
+    <script src="index.js"></script>
+    <script src="scroller.js"></script>
 </head>
 <body>
+
 <header>
     <h1 class="persona"> Curriculum vitae </h1>
 </header>
 <br><br><br>
+<img src="krant.png" alt="krant" id="layout">
 
 <div class="wrapper">
     <form action="krant.php" method="post">
@@ -117,5 +120,21 @@
 </div>
 <br><br>
 
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("layout");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
 </html>
+
+<!--scroller-->
