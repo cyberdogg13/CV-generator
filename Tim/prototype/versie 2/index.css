@@ -278,7 +278,18 @@ input[type=text]:focus {
     width: 28%;
 }
 
-#knopje{
-display: flex;
-    alignment: center;
+#layout{
+    display: flex;
+    float: left;
+    width: 350px;
+    height: 400px;
+    padding-left: 50px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.sticky + .content {
+    padding-top: 102px;
 }
