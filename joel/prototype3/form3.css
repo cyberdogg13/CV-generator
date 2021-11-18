@@ -1,0 +1,292 @@
+/*--BORDEAUX--*/
+
+* {
+    /*--sizing--*/
+    padding: 0;
+    margin: 0;
+    /*--borders--*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif, Arial;
+    Background-image: linear-gradient(360deg, darkred, #480500);
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+label {
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+
+/*---------------------------------Names--------------------------------------------*/
+
+div#names {
+    margin-left: 0vw;
+    display: inline-block;
+}
+
+.firstname {
+    margin-left: 1.5vw;
+}
+
+.insertion {
+    margin-left: 10vw;
+}
+
+.lastname {
+    margin-left: 11vw;
+}
+/*-------------------------------------locatie----------------------------------------*/
+
+#location {
+    margin-left: 0vw;
+    padding-top: 10px;
+    display: inline-block;
+    border-top: 2px solid darkgrey;
+    border-bottom: 2px solid darkgrey;
+}
+
+.city {
+    margin-left: 1.5vw;
+}
+
+.street {
+    margin-left: 13vw;
+}
+
+.postcode {
+    margin-left: 10vw;
+}
+
+/*----------------------------------Hobby-------------------------------------------*/
+
+section {
+    box-shadow: 0 8px 30px 1px black;
+    background-color: white;
+}
+
+/*----------------------------------contact-------------------------------------------*/
+
+#contact {
+    margin-left: 0vw;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.email {
+    margin-left: 1.5vw;
+}
+
+.telephone {
+    margin-left: 12vw;
+    padding: 5px;
+}
+
+.linkedin {
+    margin-left: 10.3vw;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+section {
+    box-shadow: 0 8px 30px 1px black;
+    background-color: white;
+}
+
+.file-upload {
+    /*--sizing--*/
+    margin-left: 25px;
+    padding: 20px;
+    /*--edits--*/
+    border-radius: 25px;
+    color: goldenrod;
+    /*--borders--*/
+    background-color: #58110C;
+    border: 3px solid black;
+}
+
+.file-upload:hover {
+    background-color: gold;
+    color: #58110C;
+    cursor: pointer;
+    border: 3px solid #58110C;
+}
+
+.label, file-upload {
+    padding: 20px;
+}
+
+#add {
+    /*-- sizing--*/
+    max-width: 450px;
+    padding-top: 10px;
+    /*--edits--*/
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*--borders--*/
+    border: 3px solid gold;
+    border-radius: 25px;
+}
+
+/*-------------------------------Personal-header--------------------------------------------------------------------------------*/
+
+.persona {
+    /*--sizing--*/
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*--edits--*/
+    box-shadow: 0 8px 35px 1px black;
+    text-align: center;
+    font-size: 60px;
+    /*--borders--*/
+    color: white;
+    border-bottom: 10px solid goldenrod;
+    background-color: #480500;
+}
+
+/*------------------------------------------------personal------------------------------------------------------------------------*/
+
+#pers {
+    /*--sizing--*/
+    margin: auto;
+    width: 50%;
+    /*--borders--*/
+    border: 5px solid goldenrod;
+}
+
+.person {
+    /*-- sizing--*/
+    width: 28%;
+    margin-top: 12px;
+    /*--borders--*/
+    border: 3px solid grey;
+    border-radius: 25px;
+}
+
+/*------------------------------------------------personal-text------------------------------------------------------------------------*/
+
+textarea {
+    /*--sizing--*/
+    width: 90%;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 12px;
+    /*--edits--*/
+    outline: none;
+    font-family: sans-serif, Arial;
+    resize: none;
+    /*--borders--*/
+    border: 3px solid grey;
+    border-radius: 15px;
+}
+
+textarea:focus {
+    /*--edits--*/
+    font-family: sans-serif, Arial;
+    /*--borders--*/
+    border: 3px solid goldenrod;
+}
+
+/*------------------------------------------------Contact------------------------------------------------------------------------*/
+
+#contacts {
+    /*--sizing'--*/
+    width: 50%;
+    margin: auto;
+    /*--borders--*/
+    border: 5px solid goldenrod;
+}
+
+#contact {
+    padding: 5px;
+}
+
+.contact {
+    /*--sizing--*/
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 12px;
+    width: 250px;
+    /*--borders--*/
+    border-radius: 25px;
+    border: 3px solid goldenrod;
+}
+
+.contact, label {
+    margin-left: 25px;
+}
+
+.cont {
+    margin-top: 12px;
+}
+
+/*----------------------------------------------date--------------------------------------------------------------------------*/
+
+.date {
+    /*--sizing--*/
+    width: 26%;
+    padding: 8px;
+    margin-left: 25px;
+    margin-top: 10px;
+    /*--borders--*/
+    border-radius: 25px;
+    border: 3px solid grey;
+}
+
+.date:focus {
+    border: 3px solid goldenrod;
+    padding: 8px;
+}
+
+/*-------------------------------------------------input-----------------------------------------------------------------------*/
+
+input {
+    /*--sizing--*/
+    margin-left: 25px;
+    padding: 12px;
+    /*--edits--*/
+    outline: none;
+    /*--borders--*/
+    border: 3px solid grey;
+    border-radius: 25px;
+}
+
+input[type=text]:focus {
+    border: 3px solid goldenrod;
+}
+
+#picture {
+    display: none;
+    text-decoration-color: white;
+}
+
+/*-------------------------------------------------skills-----------------------------------------------------------------------*/
+
+#skillers {
+    width: 50%;
+    margin: auto;
+    border: 5px solid goldenrod;
+}
+
+#skills {
+    padding: 5px;
+    width: 100%;
+}
+
+.skill1 {
+    margin-left: 25px;
+    width: 28%;
+}
+
+.skill {
+    margin-top: 12px;
+    width: 28%;
+}

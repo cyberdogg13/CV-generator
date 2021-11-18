@@ -1,0 +1,108 @@
+#wrapper {
+    width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid:
+            "top    top" 180px
+            "kolom1 kolom2"
+            "bot bot" 150px
+    / 400px 600px;
+}
+
+#banner {
+    grid-area: top;
+    width: 1000px;
+    object-fit: fill;
+}
+#footer{
+    padding-top: 50px;
+    grid-area: bot;
+    width: 1000px;
+    object-fit: fill;
+}
+
+#links {
+    padding-top: 30px;
+    padding-left: 50px;
+    grid-area: kolom1;
+}
+
+#rechts {
+    padding-right: 50px;
+    grid-area: kolom2;
+}
+
+hr {
+    color: red;
+}
+
+#face {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+i{
+    text-align: right;
+    padding-left: 80px;
+}
+table{
+    padding-left: 70px;
+}
+p{
+    padding-top: 13px;
+    padding-left: 70px;
+}
+#adres{
+    background-color: rebeccapurple;
+}
+#adres.pointer:before{
+    border-left: 20px solid rebeccapurple;
+}
+#phone{
+    background-color: purple;
+}
+#phone.pointer:before{
+    border-left: 20px solid purple;
+}
+#email{
+    background-color: deeppink;
+}
+#email.pointer:before{
+    border-left: 20px solid deeppink;
+}
+#website{
+    background-color: orangered;
+}
+#website.pointer:before{
+    border-left: 20px solid orangered;
+}
+
+.pointer {
+     width: 300px;
+     height: 50px;
+     position: relative;
+ }
+
+.pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}
+
+.pointer:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}

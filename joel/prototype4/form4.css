@@ -1,0 +1,321 @@
+/*-- grey colors--*/
+
+* {
+    /*--sizing--*/
+    padding: 0;
+    margin: 0;
+    /*--borders--*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia;
+    Background-image: linear-gradient(360deg, #C6C6C6, white);
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+label {
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+
+/*---------------------------------Names--------------------------------------------*/
+
+div#names {
+    margin-left: 0vw;
+    display: inline-block;
+}
+
+.firstname {
+    margin-left: 1.5vw;
+}
+
+.insertion {
+    margin-left: 10vw;
+}
+
+.lastname {
+    margin-left: 11vw;
+}
+/*-----------------------------------locatie------------------------------------------*/
+
+#location {
+    margin-left: 0vw;
+    padding-top: 10px;
+    display: inline-block;
+    border-top: 2px solid darkgrey;
+    border-bottom: 2px solid darkgrey;
+}
+
+.city {
+    margin-left: 1.5vw;
+}
+
+.street {
+    margin-left: 13vw;
+}
+
+.postcode {
+    margin-left: 10vw;
+}
+
+/*--------------------------------------Hobby---------------------------------------*/
+#hobby {
+    padding-top: 10px;
+}
+
+/*----------------------------------contact-------------------------------------------*/
+
+#contact {
+    margin-left: 0vw;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.email {
+    margin-left: 1.5vw;
+}
+
+.telephone {
+    margin-left: 12vw;
+    padding: 5px;
+}
+
+.linkedin {
+    margin-left: 10.3vw;
+}
+
+/*-----------------------------------------------------------------------------*/
+section {
+    box-shadow: 0 8px 30px 1px black;
+    background-color: white;
+}
+
+.file-upload {
+    /*--sizing--*/
+    margin-left: 25px;
+    padding: 20px;
+    /*--edits--*/
+    color: black;
+    /*--borders--*/
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.file-upload:hover {
+    background-color: darkgrey;
+    color: white ;
+    cursor: pointer;
+    border: 2px solid darkgrey;
+}
+
+.label, file-upload {
+    padding: 20px;
+}
+
+#add {
+    /*-- sizing--*/
+    max-width: 450px;
+    padding-top: 10px;
+    /*--edits--*/
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*--borders--*/
+    border-radius: 10px;
+    border: 2px solid darkgrey;
+}
+
+/*-------------------------------Personal-header--------------------------------------------------------------------------------*/
+
+.persona {
+    /*--sizing--*/
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*--edits--*/
+    box-shadow: 0 8px 35px 1px black;
+    text-align: center;
+    font-size: 60px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    /*--borders--*/
+    color: white;
+    border-bottom: 3px solid black ;
+    background-color: darkgrey;
+}
+
+/*------------------------------------------------personal------------------------------------------------------------------------*/
+
+#pers {
+    /*--sizing--*/
+    margin: auto;
+    width: 50%;
+    /*--borders--*/
+    border: 2px solid black;
+    border-bottom: 2px solid darkgrey;
+}
+
+.person {
+    /*-- sizing--*/
+    width: 28%;
+    margin-top: 12px;
+    /*--borders--*/
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+/*------------------------------------------------personal-text------------------------------------------------------------------------*/
+
+textarea {
+    /*--sizing--*/
+    width: 90%;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 12px;
+    /*--edits--*/
+    outline: none;
+    font-family: sans-serif, Arial;
+    resize: none;
+    /*--borders--*/
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+
+textarea:focus {
+    /*--edits--*/
+    font-family: sans-serif, Arial;
+    /*--borders--*/
+    border: 2px solid #004877;
+}
+
+/*------------------------------------------------Contact------------------------------------------------------------------------*/
+
+#contacts {
+    /*--sizing'--*/
+    width: 50%;
+    margin: auto;
+    /*--borders--*/
+    border: 2px solid black;
+    border-top: 2px solid darkgrey;
+    border-bottom: 2px solid darkgrey;
+}
+
+.contact, label {
+    margin-left: 25px;
+}
+
+
+
+/*----------------------------------------------date--------------------------------------------------------------------------*/
+
+.date {
+    /*--sizing--*/
+    width: 26%;
+    padding: 8px;
+    margin-left: 25px;
+    margin-top: 10px;
+    /*--borders--*/
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+
+.date:focus {
+    border: 2px solid #004877;
+    padding: 8px;
+}
+
+/*-------------------------------------------------input-----------------------------------------------------------------------*/
+
+input {
+    /*--sizing--*/
+    width: 28%;
+    margin-left: 25px;
+    margin-top: 12px;
+    padding: 12px;
+    /*--edits--*/
+    outline: none;
+    /*--borders--*/
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+input[type=text]:focus {
+    border: 2px solid #004877;
+}
+
+#picture {
+    display: none;
+    text-decoration-color: white;
+}
+
+/*-------------------------------------------------skills-----------------------------------------------------------------------*/
+
+#skillers {
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+    border-top: 2px solid darkgrey;
+}
+
+#skills {
+    padding: 5px;
+    width: 100%;
+}
+
+.skill1 {
+    margin-left: 25px;
+    width: 28%;
+}
+
+.skill {
+    margin-top: 12px;
+    width: 28%;
+}
+
+/*------------------------percentage---------------------------------*/
+
+#percentage {
+    box-shadow: 0 0px white;
+}
+
+#html {
+    width: 5rem;
+    margin-left: 4.2rem;
+}
+
+#java {
+    width: 5rem;
+    margin-left: 0rem;
+}
+
+#javascript {
+    width: 5rem;
+    margin-left: 1.1rem;
+}
+
+#php {
+    width: 5rem;
+    margin-left: 0rem;
+}
+
+#mysql {
+    width: 5rem;
+    margin-left: 3.7rem;
+}
+
+#photoshop {
+    width: 5rem;
+    margin-left: 0rem;
+}
+
+#webdesign {
+    width: 5rem;
+    margin-left: 1rem;
+}
