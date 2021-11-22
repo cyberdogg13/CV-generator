@@ -41,6 +41,7 @@ div#names {
 .lastname {
     margin-left: 11vw;
 }
+
 /*-----------------------------------------------------------------------------*/
 
 #location {
@@ -67,6 +68,7 @@ div#names {
 #hobby {
     padding-top: 10px;
 }
+
 /*-----------------------------------------------------------------------------*/
 
 #contact {
@@ -108,7 +110,7 @@ section {
 
 .file-upload:hover {
     background-color: darkgrey;
-    color: white ;
+    color: white;
     cursor: pointer;
     border: 2px solid darkgrey;
 }
@@ -146,7 +148,7 @@ section {
     -webkit-text-stroke-color: black;
     /*--borders--*/
     color: white;
-    border-bottom: 3px solid black ;
+    border-bottom: 3px solid black;
     background-color: darkgrey;
 }
 
@@ -209,7 +211,6 @@ textarea:focus {
 .contact, label {
     margin-left: 25px;
 }
-
 
 
 /*----------------------------------------------date--------------------------------------------------------------------------*/
