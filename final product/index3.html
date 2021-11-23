@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Form2 </title>
+    <link href="css/form.css" rel="stylesheet">
+    <script src="formscript.js"></script>
+</head>
+<body>
+<header>
+    <h1 class="persona"> Curriculum vitae </h1>
+</header>
+<br><br><br>
+
+<div class="wrapper">
+    <form action="cvhen.php" method="post">
+    <section id="pers">
+        <div id="personal">
+            <h2> Personal info </h2>
+            <div id="names">
+                <!------------Labels--------->
+                <!--first name-->
+                <label class="firstname" for="personal"> First Name: </label>
+                <!--Insertion-->
+                <label class="insertion" for="personal"> Insertion: </label>
+                <!--imput.lastname-->
+                <label class="lastname" for="personal"> Last Name: </label>
+                <!------------input--------->
+                <!--firstname-->
+                <input class="person" type="text" name="firstname">
+                <!--insertion-->
+                <input class="person" type="text" name="insertion">
+                <!--imput.lastname-->
+                <input class="person" type="text" name="lastname">
+                <br><br>
+            </div>
+
+            <!--date of birth-->
+            <label for="personal"> Date of birth: </label> <br>
+            <input class="date" type="date" name="birth">
+            <br><br><br><br>
+
+            <div id="location">
+                <!------------Labels--------->
+                <!--City-->
+                <label class="city" for="personal"> City: </label>
+                <!--streetname-->
+                <label class="street" for="personal"> Street name: </label>
+                <!--Adress-->
+                <label class="postcode" for="personal"> Postal code: </label>
+                <!------------input--------->
+                <!--City-->
+                <input class="person" type="text" name="city">
+                <!--Streetname-->
+                <input class="person" type="text" name="streetname">
+                <!--Postcode-->
+                <input class="person" type="text" name="postcode">
+                <br><br>
+            </div>
+
+            <div id="hobby">
+                <!--Hobby's-->
+                <label for="personal"> hobbies: </label> <br>
+                <textarea name="hobbies"> </textarea>
+                <br><br>
+            </div>
+            <!--Motivation.textarea-->
+            <label class="personal" for="personal"> Motivation: </label>
+            <br>
+            <textarea rows="7" cols="50" name="motivation"> </textarea>
+            <br><br>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div id="contact">
+            <!---------Labels-------->
+            <h2> Contact info </h2> <br>
+            <!--Email-->
+            <label class="email "for="contact"> Email: </label>
+            <!--phonenumber-->
+            <label class="telephone" for="contact"> Telephone: </label>
+            <!--linkedin-->
+            <label class="linkedin" for="contact"> Linkedin ID: </label>
+
+            <!-------input--------->
+            <!--email-->
+            <input class="cont" type="text" name="email">
+            <!--phonenumber-->
+            <input class="cont" type="text" name="telephone">
+            <!--Linkedin-->
+            <input class="cont" type="text" name="Linkedin">
+            <br><br>
+        </div>
+    </section>
+
+    <section id="skillers">
+        <div id="skills">
+            <h2> Skills </h2>
+            <br>
+            <!--work history-->
+            <label for="skills"> Work History: </label> <br>
+            <textarea class="skill" name="workHistory"></textarea><br><br>
+            <!--certificates/education-->
+            <label for="skills"> education information: </label> <br>
+            <textarea rows="6" cols="30" name="education"> </textarea> <br><br>
+            <label for="skills"> training and development: </label> <br>
+            <textarea rows="6" cols="30" name="training"> </textarea> <br><br>
+            <!--personal skills-->
+            <label for="skills"> Personal Skills: </label> <br>
+            <textarea class="skill1" name="personalskill"></textarea>
+            <br><br>
+        </div>
+    </section>
+    <p><input type="submit" name="submit" value="submit" id="knopje"/> </p>
+    </form>
+</div>
+<br><br>
+
+</body>
+</html>
