@@ -4,7 +4,7 @@
 }
 
 .container {
-    padding-left: 150px;
+    padding-left: 160px;
     padding-top: 15px;
     display: block;
     align-items: center;
@@ -12,6 +12,7 @@
 }
 
 .container h1 {
+    padding-left: 40px;
     font-size: 40px;
     color: black;
 }
@@ -22,26 +23,32 @@
 }
 
 .container ol {
+    padding-right: 40px;
     color: #b21f2d;
     font-size: 20px;
 }
 
 .container ol li {
+    padding-left: 10px;
     padding-top: 25px;
-    color: orangered;
-    /*list-style: none;*/
+    color: tomato;
+    list-style: none;
 }
 
 a {
-    color: orangered;
+    color: tomato;
     text-decoration: none;
 }
 
 a:hover {
-    color: tomato;
+    color: black;
 }
 
 p {
     padding-top: 15px;
-    color: orangered;
+    color: black;
+}
+.container .made-by {
+    font-size: 25px;
+    color: black;
 }
