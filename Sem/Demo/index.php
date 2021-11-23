@@ -60,6 +60,13 @@
 <div class="center">
     <div class="body">
     </div>
+    <div class="page-wrapper">
+        <div class="circle-wrapper">
+            <div class="success-circle"></div>
+            <div class="icon">
+                <i class="fa fa-check"></i>
+            </div>
+        </div>
     <div class="cv1">
         <img src="img/cv1.png" alt="cv1" class="img1">
         <a href="invul.html" class="Btn btn1">CV 1</a>
