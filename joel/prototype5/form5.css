@@ -23,10 +23,14 @@ label {
     padding-bottom: 10px;
 }
 
-/*---------------------------------Names--------------------------------------------*/
+section {
+    box-shadow: 0 8px 30px 1px black;
+    background-color: white;
+}
+
+/*---------------------------------Names---------------------------------------------------------------------------------*/
 
 div#names {
-    margin-left: 0vw;
     display: inline-block;
 }
 
@@ -42,10 +46,9 @@ div#names {
     margin-left: 11vw;
 }
 
-/*-----------------------------------------------------------------------------*/
+/*-----------------------------LOCATION-------------------------------------------------------------------------------------------*/
 
 #location {
-    margin-left: 0vw;
     padding-top: 10px;
     display: inline-block;
     border-top: 2px solid darkgrey;
@@ -64,15 +67,14 @@ div#names {
     margin-left: 10vw;
 }
 
-/*-----------------------------------------------------------------------------*/
+/*-------------------------------------HOBBY---------------------------------------------------------------------------------*/
 #hobby {
     padding-top: 10px;
 }
 
-/*-----------------------------------------------------------------------------*/
+/*-------------------------------------CONTACT----------------------------------------------------------------------------*/
 
 #contact {
-    margin-left: 0vw;
     padding-top: 10px;
     display: inline-block;
 }
@@ -88,49 +90,6 @@ div#names {
 
 .linkedin {
     margin-left: 10.3vw;
-}
-
-/*-----------------------------------------------------------------------------*/
-section {
-    box-shadow: 0 8px 30px 1px black;
-    background-color: white;
-}
-
-.file-upload {
-    /*--sizing--*/
-    margin-left: 25px;
-    padding: 20px;
-    /*--edits--*/
-    color: black;
-    /*--borders--*/
-    background-color: white;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-
-.file-upload:hover {
-    background-color: darkgrey;
-    color: white;
-    cursor: pointer;
-    border: 2px solid darkgrey;
-}
-
-.label, file-upload {
-    padding: 20px;
-}
-
-#add {
-    /*-- sizing--*/
-    max-width: 450px;
-    padding-top: 10px;
-    /*--edits--*/
-    overflow: hidden;
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    /*--borders--*/
-    border-radius: 10px;
-    border: 2px solid darkgrey;
 }
 
 /*-------------------------------Personal-header--------------------------------------------------------------------------------*/
@@ -152,7 +111,7 @@ section {
     background-color: darkgrey;
 }
 
-/*------------------------------------------------personal------------------------------------------------------------------------*/
+/*--------------------------------personal------------------------------------------------------------------------------*/
 
 #pers {
     /*--sizing--*/
@@ -172,7 +131,7 @@ section {
     border-radius: 5px;
 }
 
-/*------------------------------------------------personal-text------------------------------------------------------------------------*/
+/*--------------------------------ersonal-text---------------------------------------------------------------------------*/
 
 textarea {
     /*--sizing--*/
@@ -196,7 +155,7 @@ textarea:focus {
     border: 2px solid #004877;
 }
 
-/*------------------------------------------------Contact------------------------------------------------------------------------*/
+/*----------------------------Contact-----------------------------------------------------------------------------------*/
 
 #contacts {
     /*--sizing'--*/
@@ -213,7 +172,7 @@ textarea:focus {
 }
 
 
-/*----------------------------------------------date--------------------------------------------------------------------------*/
+/*----------------------------date--------------------------------------------------------------------------------------*/
 
 .date {
     /*--sizing--*/
@@ -231,7 +190,7 @@ textarea:focus {
     padding: 8px;
 }
 
-/*-------------------------------------------------input-----------------------------------------------------------------------*/
+/*----------------------------------Input--------------------------------------------------------------------------------*/
 
 input {
     /*--sizing--*/
@@ -250,12 +209,7 @@ input[type=text]:focus {
     border: 2px solid #004877;
 }
 
-#picture {
-    display: none;
-    text-decoration-color: white;
-}
-
-/*-------------------------------------------------skills-----------------------------------------------------------------------*/
+/*-------------------------------Skillers--------------------------------------------------------------------------------*/
 
 #skillers {
     width: 50%;
@@ -275,17 +229,8 @@ input[type=text]:focus {
     width: 28%;
 }
 
-.level1 {
-    /*seizing*/
-    margin-top: 1.1rem;
-    height: 3.4rem;
-    width: 2.5em;
-    /*edits*/
-    position: absolute;
-    /*borders*/
-    border-radius: 5px;
-    border: 2px solid darkgrey;
-}
+
+/*------------------------------Level Hovers----------------------------------------------------------------------------*/
 
 .level1:hover {
     background-color: #004877;
@@ -302,10 +247,41 @@ input[type=text]:focus {
     color: white;
 }
 
+.level4:hover {
+    background-color: #004877;
+    color: white;
+}
+
+.level5:hover {
+    background-color: #004877;
+    color: white;
+}
+
+.level6:hover {
+    background-color: #004877;
+    color: white;
+}
+
+/*---------------------------------------------------------LEVELS--------------------------------------------------------*/
+
+.level1 {
+    /*seizing*/
+    margin-top: 1rem;
+    margin-left: -0.3em;
+    height: 3.3rem;
+    width: 2.5em;
+    /*edits*/
+    position: absolute;
+    /*borders*/
+    border-radius: 5px;
+    border: 2px solid darkgrey;
+}
+
 .level2 {
     /*seizing*/
-    margin-top: 0.8rem;
-    height: 3.4rem;
+    margin-top: 0.7rem;
+    margin-left: -0.3em;
+    height: 3.3rem;
     width: 2.5em;
     /*edits*/
     border-radius: 5px;
@@ -316,8 +292,9 @@ input[type=text]:focus {
 
 .level3 {
     /*seizing*/
-    margin-top: 0.8rem;
-    height: 3.4rem;
+    margin-top: 0.7rem;
+    margin-left: -0.3em;
+    height: 3.3rem;
     width: 2.5em;
     /*edits*/
     border-radius: 5px;
@@ -326,6 +303,43 @@ input[type=text]:focus {
     border: 2px solid darkgrey;
 }
 
+.level4 {
+    /*seizing*/
+    margin-top: 1rem;
+    height: 3.3rem;
+    width: 2.5em;
+    /*edits*/
+    border-radius: 5px;
+    /*borders*/
+    position: absolute;
+    border: 2px solid darkgrey;
+}
+
+.level5 {
+    /*seizing*/
+    margin-top: 0.7rem;
+    height: 3.3rem;
+    width: 2.5em;
+    /*edits*/
+    border-radius: 5px;
+    /*borders*/
+    position: absolute;
+    border: 2px solid darkgrey;
+}
+
+.level6 {
+    /*seizing*/
+    margin-top: 0.7rem;
+    height: 3.3rem;
+    width: 2.5em;
+    /*edits*/
+    border-radius: 5px;
+    /*borders*/
+    position: absolute;
+    border: 2px solid darkgrey;
+}
+
+/*--------------------------------------SKILLS 2 T/M 6-------------------------------------------------------------------*/
 .skill2 {
     margin-left: 1.5rem;
     width: 28%;
@@ -336,10 +350,22 @@ input[type=text]:focus {
     width: 28%;
 }
 
-.skill {
-
+.skill4 {
+    margin-left: 12rem;
+    width: 28%;
 }
 
+.skill5 {
+    margin-left: 12rem;
+    width: 28%;
+}
+
+.skill6 {
+    margin-left: 12rem;
+    width: 28%;
+}
+
+/*-------------------------------------------WORK-HISTORY---------------------------------------------------------------*/
 .workhis1 {
     margin-top: 12px;
     width: 28%;
