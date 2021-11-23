@@ -41,6 +41,7 @@ div#names {
 .lastname {
     margin-left: 11vw;
 }
+
 /*-----------------------------------------------------------------------------*/
 
 #location {
@@ -67,6 +68,7 @@ div#names {
 #hobby {
     padding-top: 10px;
 }
+
 /*-----------------------------------------------------------------------------*/
 
 #contact {
@@ -108,7 +110,7 @@ section {
 
 .file-upload:hover {
     background-color: darkgrey;
-    color: white ;
+    color: white;
     cursor: pointer;
     border: 2px solid darkgrey;
 }
@@ -146,7 +148,7 @@ section {
     -webkit-text-stroke-color: black;
     /*--borders--*/
     color: white;
-    border-bottom: 3px solid black ;
+    border-bottom: 3px solid black;
     background-color: darkgrey;
 }
 
@@ -167,7 +169,7 @@ section {
     margin-top: 12px;
     /*--borders--*/
     border: 2px solid grey;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /*------------------------------------------------personal-text------------------------------------------------------------------------*/
@@ -184,7 +186,7 @@ textarea {
     resize: none;
     /*--borders--*/
     border: 2px solid grey;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 textarea:focus {
@@ -211,7 +213,6 @@ textarea:focus {
 }
 
 
-
 /*----------------------------------------------date--------------------------------------------------------------------------*/
 
 .date {
@@ -221,7 +222,7 @@ textarea:focus {
     margin-left: 25px;
     margin-top: 10px;
     /*--borders--*/
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid grey;
 }
 
@@ -242,7 +243,7 @@ input {
     outline: none;
     /*--borders--*/
     border: 2px solid grey;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 input[type=text]:focus {
@@ -269,27 +270,104 @@ input[type=text]:focus {
 }
 
 .skill1 {
-    margin-left: 25px;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    width: 28%;
+}
+
+.level1 {
+    /*seizing*/
+    margin-top: 1.1rem;
+    height: 3.4rem;
+    width: 2.5em;
+    /*edits*/
+    position: absolute;
+    /*borders*/
+    border-radius: 5px;
+    border: 2px solid darkgrey;
+}
+
+.level1:hover {
+    background-color: #004877;
+    color: white;
+}
+
+.level2:hover {
+    background-color: #004877;
+    color: white;
+}
+
+.level3:hover {
+    background-color: #004877;
+    color: white;
+}
+
+.level2 {
+    /*seizing*/
+    margin-top: 0.8rem;
+    height: 3.4rem;
+    width: 2.5em;
+    /*edits*/
+    border-radius: 5px;
+    /*borders*/
+    position: absolute;
+    border: 2px solid darkgrey;
+}
+
+.level3 {
+    /*seizing*/
+    margin-top: 0.8rem;
+    height: 3.4rem;
+    width: 2.5em;
+    /*edits*/
+    border-radius: 5px;
+    /*borders*/
+    position: absolute;
+    border: 2px solid darkgrey;
+}
+
+.skill2 {
+    margin-left: 1.5rem;
+    width: 28%;
+}
+
+.skill3 {
+    margin-left: 1.5rem;
     width: 28%;
 }
 
 .skill {
+
+}
+
+.workhis1 {
     margin-top: 12px;
     width: 28%;
+    height: 10em;
 }
 
-#layout{
-    display: flex;
-    float: left;
-    width: 350px;
-    height: 400px;
-    padding-left: 50px;
-}
-.sticky {
-    position: fixed;
-    top: 0;
+.workhis2 {
+    margin-left: 1.5rem;
+    width: 28%;
+    height: 10em;
 }
 
-.sticky + .content {
-    padding-top: 102px;
+.workhis3 {
+    margin-top: -8.5rem;
+    float: right;
+    margin-right: 2rem;
+    width: 28%;
+    height: 10em;
+}
+
+/*-------------------------------------------------Knopje-------------------------------------------------------------------------*/
+#knopje {
+    margin-left: 26rem;
+    width: 150px;
+    border-radius: 10px;
+}
+
+#knopje:hover {
+    background-color: #1c2a4b;
+    color: white;
 }

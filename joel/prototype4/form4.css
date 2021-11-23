@@ -1,4 +1,4 @@
-/*--BORDEAUX--*/
+/*-- grey colors--*/
 
 * {
     /*--sizing--*/
@@ -41,7 +41,7 @@ div#names {
 .lastname {
     margin-left: 11vw;
 }
-/*-----------------------------------------------------------------------------*/
+/*-----------------------------------locatie------------------------------------------*/
 
 #location {
     margin-left: 0vw;
@@ -63,11 +63,12 @@ div#names {
     margin-left: 10vw;
 }
 
-/*-----------------------------------------------------------------------------*/
+/*--------------------------------------Hobby---------------------------------------*/
 #hobby {
     padding-top: 10px;
 }
-/*-----------------------------------------------------------------------------*/
+
+/*----------------------------------contact-------------------------------------------*/
 
 #contact {
     margin-left: 0vw;
@@ -278,18 +279,43 @@ input[type=text]:focus {
     width: 28%;
 }
 
-#layout{
-    display: flex;
-    float: left;
-    width: 350px;
-    height: 400px;
-    padding-left: 50px;
-}
-.sticky {
-    position: fixed;
-    top: 0;
+/*------------------------percentage---------------------------------*/
+
+#percentage {
+    box-shadow: 0 0px white;
 }
 
-.sticky + .content {
-    padding-top: 102px;
+#html {
+    width: 5rem;
+    margin-left: 4.2rem;
+}
+
+#java {
+    width: 5rem;
+    margin-left: 0rem;
+}
+
+#javascript {
+    width: 5rem;
+    margin-left: 1.1rem;
+}
+
+#php {
+    width: 5rem;
+    margin-left: 0rem;
+}
+
+#mysql {
+    width: 5rem;
+    margin-left: 3.7rem;
+}
+
+#photoshop {
+    width: 5rem;
+    margin-left: 0rem;
+}
+
+#webdesign {
+    width: 5rem;
+    margin-left: 1rem;
 }

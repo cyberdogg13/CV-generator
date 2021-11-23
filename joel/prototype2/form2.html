@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title> Form2 </title>
-    <link href="index.css" rel="stylesheet">
-    <script src="index.js"></script>
-    <script src="scroller.js"></script>
+    <link href="form2.css" rel="stylesheet">
+    <script src="form2.js"></script>
 </head>
 <body>
-
 <header>
     <h1 class="persona"> Curriculum vitae </h1>
 </header>
 <br><br><br>
-<img src="krant.png" alt="krant" id="layout">
 
 <div class="wrapper">
-    <form action="krant.php" method="post">
     <section id="pers">
         <div id="personal">
-            <h2> Personal info </h2>
+            <h2> Personal info </h2> <br><br><br>
+
+            <!--add picture file-->
+            <label class="file-upload">
+                <input id="picture" type="file" onchange="getFoto()"/>
+                Click to add picture
+            </label>
+
+            <label id="add"> No file added yet </label>
+            <br><br><br><br><br><br>
+
             <div id="names">
                 <!------------Labels--------->
                 <!--first name-->
@@ -30,17 +36,17 @@
                 <label class="lastname" for="personal"> Last Name: </label>
                 <!------------input--------->
                 <!--firstname-->
-                <input class="person" type="text" name="firstname">
+                <input class="person" type="text" name="voornaam">
                 <!--insertion-->
-                <input class="person" type="text" name="insertion">
+                <input class="person" type="text" name="tussenvoegsel">
                 <!--imput.lastname-->
-                <input class="person" type="text" name="lastname">
+                <input class="person" type="text" name="achternaam">
                 <br><br>
             </div>
 
             <!--date of birth-->
             <label for="personal"> Date of birth: </label> <br>
-            <input class="date" type="date" name="birth">
+            <input class="date" type="date" name="Date of birth">
             <br><br><br><br>
 
             <div id="location">
@@ -53,7 +59,7 @@
                 <label class="postcode" for="personal"> Postal code: </label>
                 <!------------input--------->
                 <!--City-->
-                <input class="person" type="text" name="city">
+                <input class="person" type="text" name="City">
                 <!--Streetname-->
                 <input class="person" type="text" name="streetname">
                 <!--Postcode-->
@@ -63,14 +69,16 @@
 
             <div id="hobby">
                 <!--Hobby's-->
-                <label for="personal"> hobbies: </label> <br>
-                <textarea name="hobbies"> </textarea>
+                <label for="personal"> Hobby's: </label> <br>
+                <input class="person" type="text" name="Hobbys">
+                <input class="person" type="text" name="Hobbys">
+                <input class="person" type="text" name="Hobbys">
                 <br><br>
             </div>
             <!--Motivation.textarea-->
             <label class="personal" for="personal"> Motivation: </label>
             <br>
-            <textarea rows="7" cols="50" name="motivation"> </textarea>
+            <textarea rows="7" cols="50"> </textarea>
             <br><br>
         </div>
     </section>
@@ -103,38 +111,22 @@
             <br>
             <!--work history-->
             <label for="skills"> Work History: </label> <br>
-            <textarea class="skill" name="workHistory"></textarea><br><br>
+            <input class="skill" type="text" name="Work History">
+            <input class="skill" type="text" name="Work History">
+            <input class="skill" type="text" name="Work History"> <br><br>
             <!--certificates/education-->
-            <label for="skills"> education information: </label> <br>
-            <textarea rows="6" cols="30" name="education"> </textarea> <br><br>
-            <label for="skills"> training and development: </label> <br>
-            <textarea rows="6" cols="30" name="training"> </textarea> <br><br>
+            <label for="skills"> Certificates: </label> <br>
+            <textarea rows="6" cols="30"> </textarea> <br><br>
             <!--personal skills-->
             <label for="skills"> Personal Skills: </label> <br>
-            <textarea class="skill1" name="personalskill"></textarea>
+            <input class="skill1" type="text" name="personal skill">
+            <input class="skill" type="text" name="personal skill">
+            <input class="skill" type="text" name="personal skill">
             <br><br>
         </div>
     </section>
-    <p><input type="submit" name="submit" value="submit" id="knopje"/> </p>
-    </form>
 </div>
 <br><br>
 
-<script>
-    window.onscroll = function() {myFunction()};
-
-    var header = document.getElementById("layout");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
-</script>
 </body>
 </html>
-
-<!--scroller-->
