@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title> Form2 </title>
     <link href="form5.css" rel="stylesheet">
-    <script src="formscript.js"></script>
 </head>
 <body>
 <header>
-    <h1 class="persona"> Curriculum vitae </h1>
+    <h1 class="persona"> Curriculum Vitae </h1>
 </header>
 <br><br><br>
 
@@ -16,7 +15,7 @@
     <form action="krant.php" method="post">
         <section id="pers">
             <div id="personal">
-                <h2> Personal info </h2>
+                <h2> Personal Info </h2>
                 <div id="names">
                     <!------------Labels--------->
                     <!--first name-->
@@ -25,6 +24,7 @@
                     <label class="insertion" for="personal"> Insertion: </label>
                     <!--imput.lastname-->
                     <label class="lastname" for="personal"> Last Name: </label>
+
                     <!------------input--------->
                     <!--firstname-->
                     <input class="person" type="text" name="firstname">
@@ -36,7 +36,7 @@
                 </div>
 
                 <!--date of birth-->
-                <label for="personal"> Date of birth: </label> <br>
+                <label for="personal"> Date Of Birth: </label> <br>
                 <input class="date" type="date" name="birth">
                 <br><br><br><br>
 
@@ -45,9 +45,9 @@
                     <!--City-->
                     <label class="city" for="personal"> City: </label>
                     <!--streetname-->
-                    <label class="street" for="personal"> Street name: </label>
+                    <label class="street" for="personal"> Street Name: </label>
                     <!--Adress-->
-                    <label class="postcode" for="personal"> Postal code: </label>
+                    <label class="postcode" for="personal"> Postal Code: </label>
                     <!------------input--------->
                     <!--City-->
                     <input class="person" type="text" name="city">
@@ -102,7 +102,8 @@
                 <label for="skills"> Work History: </label> <br>
                 <textarea class="workhis1" name="workHistory"></textarea>
                 <textarea class="workhis2" name="workHistory"></textarea>
-                <textarea class="workhis3" name="workHistory"></textarea><br><br>
+                <textarea class="workhis3" name="workHistory"></textarea>
+                <br><br>
                 <!--certificates/education-->
                 <label for="skills"> Education Information: </label> <br>
                 <textarea rows="6" cols="30" name="education"> </textarea> <br><br>
@@ -120,11 +121,27 @@
                         <option value="4"> 4</option>
                         <option value="5"> 5</option>
                     </select>
+                    <textarea class="skill4" name="personalskill"></textarea>
+                    <select class="level4" name="cars">
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
                 </div>
 
                 <div id="skil2">
                     <textarea class="skill2" name="personalskill"></textarea>
                     <select class="level2" name="cars">
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+                    <textarea class="skill5" name="personalskill"></textarea>
+                    <select class="level5" name="cars">
                         <option value="1"> 1</option>
                         <option value="2"> 2</option>
                         <option value="3"> 3</option>
@@ -142,12 +159,20 @@
                         <option value="4"> 4</option>
                         <option value="5"> 5</option>
                     </select>
+                    <textarea class="skill6" name="personalskill"></textarea>
+                    <select class="level6" name="cars">
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
                 </div>
                 <br><br>
 
             </div>
         </section>
-        <input type="submit" name="submit" value="submit" id="knopje"/>
+        <input type="submit" name="submit" value="SUBMIT" id="knopje"/>
     </form>
 </div>
 <br><br>

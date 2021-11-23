@@ -1,27 +1,27 @@
 <?php
 
 //: variable aanmaken met als waarde wat er ingevult is in het form(zie textfield.html)
-    if (isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
 
-        $firstname = $_POST['firstname'];
-        $lastname = $_POST['lastname'];
-        $birth = $_POST['birth'];
-        $city = $_POST['city'];
-        $streetname = $_POST['streetname'];
-        $postcode = $_POST['postcode'];
-        $motivation = $_POST['motivation'];
-        $email = $_POST['email'];
-        $phonenumber = $_POST['telephone'];
-        $linkedin = $_POST['Linkedin'];
-        $workHistory = $_POST['workHistory'];
-        $education = $_POST['education'];
-        $training = $_POST['training'];
-        $insertion = $_POST['insertion'];
-        $hobbys = $_POST['hobbies'];
-        $skill = $_POST['personalskill'];
-    
-        $array = array($firstname, $lastname, $birth, $city, $streetname, $postcode,
-            $motivation, $email, $phonenumber, $linkedin, $workHistory, $education, $training, $insertion, $hobbys, $skill);
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $birth = $_POST['birth'];
+    $city = $_POST['city'];
+    $streetname = $_POST['streetname'];
+    $postcode = $_POST['postcode'];
+    $motivation = $_POST['motivation'];
+    $email = $_POST['email'];
+    $phonenumber = $_POST['telephone'];
+    $linkedin = $_POST['Linkedin'];
+    $workHistory = $_POST['workHistory'];
+    $education = $_POST['education'];
+    $training = $_POST['training'];
+    $insertion = $_POST['insertion'];
+    $hobbys = $_POST['hobbies'];
+    $skill = $_POST['personalskill'];
+
+    $array = array($firstname, $lastname, $birth, $city, $streetname, $postcode,
+        $motivation, $email, $phonenumber, $linkedin, $workHistory, $education, $training, $insertion, $hobbys, $skill);
 
     function emptyCheck($array){
         echo "<body class=container_content id=container_content>
@@ -110,7 +110,7 @@
         <div class="profiel_text">
             <h2>
             <?php if (!empty($array[0])) {
-                echo"$array[0] ";
+                echo"$array[0] $insertion ";
             }
             if (!empty($array[1])) {
                 echo"$array[1]";
@@ -140,7 +140,7 @@
             <h3 class="title">Education</h3>
             <ul>
                 <li>
-                    <h5><?php echo "$cert<br> $time"?></h5>
+                    <h5><?php echo "$education"?></h5>
                 </li>
             </ul>
         </div>
@@ -186,6 +186,13 @@
            </h5>
         </div>
 
+        <div class="about">
+            <h2 class="title2">training</h2>
+           <h5>
+               <?php echo"$training"; ?>
+           </h5>
+        </div>
+
         <div class="about skills">
             <h2 class="title2">Professional Skills</h2>
             <div class="box">
@@ -220,15 +227,7 @@
             </div>
         </div>
 
-        <div class="about interest">
-            <h2 class="title2">Interest</h2>
-            <ul>
-                <li><i class="fa fa-gamepad" aria-hidden="true"></i>Gaming</li>
-                <li><i class="fa fa-television" aria-hidden="true"></i>TV</li>
-                <li><i class="fa fa-spotify" aria-hidden="true"></i>Music</li>
-                <li><i class="fa fa-laptop" aria-hidden="true"></i>Programming</li>
-            </ul>
-        </div>
+        
     </div>
 </div>
 <div class="text-center" style="padding:20px;">

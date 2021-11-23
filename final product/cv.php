@@ -113,6 +113,7 @@ if (isset($_POST['submit'])) {
                         if (!empty($array[0])) {
                             echo"$array[0] ";
                         }
+                        echo "$insertion ";
                         if (!empty($array[1])) {
                             echo"$array[1]<br>";
                         }
@@ -207,6 +208,13 @@ if (isset($_POST['submit'])) {
                         if (!empty($array[10])) {
                             echo"$array[10]<br>";
                         }
+                        ?>
+                    </div>
+
+                    <h2 class="rit-titl"> Training</h2>
+                    <div class="work-exp">
+                        <?php
+                        echo "$training"
                         ?>
                     </div>
 
