@@ -7,7 +7,7 @@
 </head>
 <style>
 
-    @keyframes slideInDown {
+    @keyframes slideInUp {
         0% {
             transform: translatey(500%);
         }
@@ -33,6 +33,15 @@
             transform: translatex(0);
         }
     }
+    @keyframes slideInDown {
+        0% {
+            transform: translatey(500%);
+        }
+        100% {
+            transform: translatey(0);
+        }
+    }
+
 
     .cv1 {
         animation-duration: 2s;
@@ -45,7 +54,7 @@
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
         animation-delay: 0s;
-        animation-name: slideInDown;
+        animation-name: slideInUp;
     }
 
     .cv3 {
@@ -53,6 +62,12 @@
         animation-timing-function: ease-in-out;
         animation-delay: 0s;
         animation-name: slideInRight;
+    }
+    .cv4 {
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-name: slideIndown;
     }
 </style>
 <body>
@@ -67,21 +82,26 @@
                 <i class="fa fa-check"></i>
             </div>
         </div>
-    <div class="cv1">
-        <img src="img/cv1.png" alt="cv1" class="img1">
-        <a href="invul.html" class="Btn btn1">CV 1</a>
-    </div>
+        <div class="cv1">
+            <img src="img/cv1.png" alt="cv1" class="img1">
+            <a href="invul.html" class="Btn btn1">CV 1</a>
+        </div>
 
-    <div class="cv2">
-        <img src="img/krant.png" alt="cv2" class="img2">
-        <a href="invul2.html" class="Btn btn1">CV 2</a>
-    </div>
+        <div class="cv2">
+            <img src="img/krant.png" alt="cv2" class="img2">
+            <a href="invul2.html" class="Btn btn1">CV 2</a>
+        </div>
 
-    <div class="cv3">
-        <img src="img/cvhen.png" alt="cv3" class="img2">
-        <a href="invul3.html" class="Btn btn1">CV 3</a>
+        <div class="cv3">
+            <img src="img/cvhen.png" alt="cv3" class="img2">
+            <a href="invul3.html" class="Btn btn1">CV 3</a>
+        </div>
+
+        <div class="cv4">
+            <img src="img/Picture1.png" alt="cv4" class="img2">
+            <a href="invul4.html" class="Btn btn1">CV 4</a>
+        </div>
     </div>
-</div>
 </div>
 </body>
 </html>

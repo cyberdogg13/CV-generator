@@ -3,25 +3,21 @@
 //: variable aanmaken met als waarde wat er ingevult is in het form(zie textfield.html)
 if (isset($_POST['submit'])) {
 
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $birth = $_POST['birth'];
-    $city = $_POST['city'];
+    $firstname = $_POST['voornaam'];
+    $lastname = $_POST['achternaam'];
+    $birth = $_POST['geboortedatum'];
+    $city = $_POST['City'];
     $streetname = $_POST['streetname'];
     $postcode = $_POST['postcode'];
-    $motivation = $_POST['motivation'];
+    $profile = $_POST['profiel'];
     $email = $_POST['email'];
     $phonenumber = $_POST['telephone'];
     $linkedin = $_POST['Linkedin'];
-    $workHistory = $_POST['workHistory'];
-    $education = $_POST['education'];
-    $training = $_POST['training'];
-    $insertion = $_POST['insertion'];
-    $hobbys = $_POST['hobbies'];
-    $skill = $_POST['personalskill'];
+    $experience = $_POST['experience'];
+    $time = $_POST['time'];
+    $cert = $_POST['cert'];
 
-    $array = array($firstname, $lastname, $birth, $city, $streetname, $postcode,
-        $motivation, $email, $phonenumber, $linkedin, $workHistory, $education, $training, $insertion, $hobbys, $skill);
+    $array = array($firstname,$lastname,$birth,$city,$streetname,$postcode,$profile,$email,$phonenumber,$linkedin,$experience,$time,$cert);
 
     function emptyCheck($array){
         echo "<body class=container_content id=container_content>
@@ -113,7 +109,6 @@ if (isset($_POST['submit'])) {
                         if (!empty($array[0])) {
                             echo"$array[0] ";
                         }
-                        echo "$insertion ";
                         if (!empty($array[1])) {
                             echo"$array[1]<br>";
                         }
@@ -208,13 +203,6 @@ if (isset($_POST['submit'])) {
                         if (!empty($array[10])) {
                             echo"$array[10]<br>";
                         }
-                        ?>
-                    </div>
-
-                    <h2 class="rit-titl"> Training</h2>
-                    <div class="work-exp">
-                        <?php
-                        echo "$training"
                         ?>
                     </div>
 
