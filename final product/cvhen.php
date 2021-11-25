@@ -3,63 +3,75 @@
 //: variable aanmaken met als waarde wat er ingevult is in het form(zie textfield.html)
 if (isset($_POST['submit'])) {
 
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $birth = $_POST['birth'];
-    $city = $_POST['city'];
-    $streetname = $_POST['streetname'];
-    $postcode = $_POST['postcode'];
-    $motivation = $_POST['motivation'];
-    $email = $_POST['email'];
-    $phonenumber = $_POST['telephone'];
-    $linkedin = $_POST['Linkedin'];
-    $workHistory = $_POST['workHistory'];
-    $education = $_POST['education'];
-    $training = $_POST['training'];
-    $insertion = $_POST['insertion'];
-    $hobbys = $_POST['hobbies'];
-    $skill = $_POST['personalskill'];
+    $firstname = $_POST['firstname'];                       // 0
+    $insertion = $_POST['insertion'];                       // 1
+    $lastname = $_POST['lastname'];                         // 2
+    $birth = $_POST['birth'];                               // 3
+    $city = $_POST['city'];                                 // 4
+    $streetname = $_POST['streetname'];                     // 5
+    $postcode = $_POST['postcode'];                         // 6
+    $hobbies = $_POST['hobbies'];                           // 7
+    $motivation = $_POST['motivation'];                     // 8
+    $email = $_POST['email'];                               // 9
+    $phonenumber = $_POST['telephone'];                     // 10
+    $linkedin = $_POST['Linkedin'];                         // 11
+    $workHistory1 = $_POST['workHistory1'];                 // 12
+    $workHistory2 = $_POST['workHistory2'];                 // 13
+    $workHistory3 = $_POST['workHistory3'];                 // 14
+    $education = $_POST['education'];                       // 15
+    $training = $_POST['training'];                         // 16
+    $personalskill1 = $_POST['personalskill1'];             // 17
+    $skillLvl1 = $_POST['skillLvl1'];                       // 18
+    $personalskill2 = $_POST['personalskill2'];             // 19
+    $skillLvl2 = $_POST['skillLvl2'];                       // 20
+    $personalskill3 = $_POST['personalskill3'];             // 21
+    $skillLvl3 = $_POST['skillLvl3'];                       // 22
+    $personalskill4 = $_POST['personalskill4'];             // 23
+    $skillLvl4 = $_POST['skillLvl4'];                       // 24
 
-    $array = array($firstname, $lastname, $birth, $city, $streetname, $postcode,
-        $motivation, $email, $phonenumber, $linkedin, $workHistory, $education, $training, $insertion, $hobbys, $skill);
+    $array = array($firstname, $insertion, $lastname, $birth, $city, $streetname, $postcode,
+        $hobbies, $motivation, $email, $phonenumber, $linkedin, $workHistory1, $workHistory2, $workHistory3,
+        $education, $training, $personalskill1, $skillLvl1, $personalskill2, $skillLvl2, $personalskill3, $skillLvl3,
+        $personalskill4,$skillLvl4);
 
-    function emptyCheck($array){
-        echo "<body class=container_content id=container_content>
-              <link rel='stylesheet' href='cv.css'>
-              <div id='center'>";
-        echo'<h1>personal info</h1>';
+    function emptyCheck($array)
+    {
+        echo '<h1>personal info</h1>';
         if (!empty($array[0])) {
-            echo"first name: $array[0]<br>";
+            echo "first name: $array[0]<br>";
         }
         if (!empty($array[1])) {
-            echo"Last name: $array[1]<br>";
+            echo "insertion: $array[1]<br>";
         }
         if (!empty($array[2])) {
-            echo" date of birth: $array[2]<br>";
+            echo "Last name: $array[2]<br>";
         }
         if (!empty($array[3])) {
-            echo" city: $array[3]<br>";
+            echo " date of birth: $array[3]<br>";
         }
         if (!empty($array[4])) {
-            echo" streetname: $array[4]<br>";
+            echo " city: $array[4]<br>";
         }
         if (!empty($array[5])) {
-            echo"profile: $array[5]<br>";
+            echo " streetname: $array[5]<br>";
         }
         if (!empty($array[6])) {
-            echo" postcode: $array[6]<br>";
+            echo "postcode: $array[6]<br>";
+        }
+        if (!empty($array[7])) {
+            echo " hobbies: $array[7]<br>";
         }
         echo '<br> <h1>contact info</h1> <br>';
-        if (!empty($array[7])) {
-            echo" E-mail: $array[7]<br>";
-        }
-        if (!empty($array[8])) {
-            echo" phonenumber:$array[8]<br>";
-        }
         if (!empty($array[9])) {
-            echo" linkedin name: $array[9]<br>";
+            echo " E-mail: $array[9]<br>";
         }
-        echo'</div>  </body>;';
+        if (!empty($array[10])) {
+            echo " phonenumber:$array[10]<br>";
+        }
+        if (!empty($array[11])) {
+            echo " linkedin name: $array[11]<br>";
+        }
+        echo '</div>  </body>;';
     }
 }
 ?>
@@ -97,7 +109,7 @@ if (isset($_POST['submit'])) {
                         filename:     'Cv_'+js.AutoCode()+'.pdf',
                         image:        { type: 'jpeg', quality: 0.98 },
                         html2canvas:  { scale: 1 },
-                        jsPDF:        { unit: 'in', format: 'a3', orientation: 'portrait' }
+                        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
                     };
                 html2pdf().set(opt).from(element).save();
             });
@@ -109,12 +121,17 @@ if (isset($_POST['submit'])) {
     <div class="left_side">
         <div class="profiel_text">
             <h2>
-            <?php if (!empty($array[0])) {
-                echo"$array[0] $insertion ";
+            <?php
+            if (!empty($array[0])) {
+                echo"$array[0] ";
             }
             if (!empty($array[1])) {
-                echo"$array[1]";
-            } ?>
+                echo"$array[1] ";
+            }
+            if (!empty($array[2])) {
+                echo"$array[2] ";
+            }
+            ?>
             </h2>
         </div>
         <div class="contactInfo">
@@ -122,16 +139,16 @@ if (isset($_POST['submit'])) {
             <ul>
                 <li>
                     <span class="icon"><br><i class="fa fa-phone" aria-hidden="true"></i></span>
-                    <span class="text"><?php echo"$array[8]"; ?></span>
+                    <span class="text"><?php echo"$array[10]"; ?></span>
                 </li>
                 <li>
                     <span class="icon"><br><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                    <span class="text"><?php echo "$email"?></span>
+                    <span class="text"><?php echo "$array[9]"?></span>
                 </li>
 
                 <li>
                     <span class="icon"><br><i class="fa fa-map-o" aria-hidden="true"></i></span>
-                    <span class="text"><?php echo "$city"?></span>
+                    <span class="text"><?php echo "$array[5] $array[4]<br> $array[6]"?></span>
                 </li>
             </ul>
         </div>
@@ -140,31 +157,37 @@ if (isset($_POST['submit'])) {
             <h3 class="title">Education</h3>
             <ul>
                 <li>
-                    <h5><?php echo "$education"?></h5>
+                    <h5><?php echo "$array[15]"?></h5>
                 </li>
             </ul>
         </div>
 
         <div class="contactInfo language">
-            <h3 class="title">Languages</h3>
+            <h3 class="title">Skills</h3>
             <div style="width: 90%;"></div>
             <ul>
                 <li>
-                    <span class="text">English</span>
+                    <span class="text"><?php echo $array[17] ?></span>
                     <span class="percent">
-                    <div style="width: 90%;"></div>
+                    <div style="width: <?php echo "$array[18]"*20?>%;"></div>
                         </span>
                 </li>
                 <li>
-                    <span class="text">Dutch</span>
+                    <span class="text"><?php echo $array[19] ?></span>
                     <span class="percent">
-                    <div style="width: 40%;"></div>
+                    <div style="width: <?php echo "$array[20]"*20?>%;"></div>
                         </span>
                 </li>
                 <li>
-                    <span class="text">Portuguese</span>
+                    <span class="text"><?php echo $array[21] ?></span>
                     <span class="percent">
-                    <div style="width: 60%;"></div>
+                    <div style="width: <?php echo "$array[22]"*20?>%;"></div>
+                        </span>
+                </li>
+                <li>
+                    <span class="text"><?php echo $array[23] ?></span>
+                    <span class="percent">
+                    <div style="width: <?php echo "$array[24]"*20?>%;"></div>
                         </span>
                 </li>
             </ul>
@@ -172,62 +195,39 @@ if (isset($_POST['submit'])) {
     </div>
     <div class="right_Side">
         <div class="about">
-            <h2 class="title2">Profile</h2>
-            <p><?php if (!empty($array[6])) {
-                echo"$array[6]  ";
-                } ?></p>
+            <h2 class="title2">Hobbies & Motivation</h2>
+            <p><?php
+                if (!empty($array[7])) {
+                echo"$array[7]<br><br>  ";
+                }
+                if (!empty($array[8])) {
+                    echo"$array[8]<br>  ";
+                }
+                ?></p>
         </div>
         <div class="about">
             <h2 class="title2">Experience</h2>
-           <h5>
-               <?php if (!empty($array[10])) {
-                   echo"$array[10]<br>";
-               } ?>
-           </h5>
+           <p>
+               <?php
+               if (!empty($array[12])) {
+                   echo"$array[12]<br><br>  ";
+               }
+               if (!empty($array[13])) {
+                   echo"$array[13]<br><br>  ";
+               }
+               if (!empty($array[14])) {
+                   echo"$array[14]<br><br>  ";
+               }
+               ?>
+           </p>
         </div>
 
         <div class="about">
             <h2 class="title2">training</h2>
-           <h5>
-               <?php echo"$training"; ?>
-           </h5>
+           <p>
+               <?php echo"$array[16]"; ?>
+           </p>
         </div>
-
-        <div class="about skills">
-            <h2 class="title2">Professional Skills</h2>
-            <div class="box">
-                <h4>HTML</h4>
-                <div class="percent">
-                    <div style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="box">
-                <h4>Javascript</h4>
-                <div class="percent">
-                    <div style="width: 45%;"></div>
-                </div>
-            </div>
-            <div class="box">
-                <h4>JAVA</h4>
-                <div class="percent">
-                    <div style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="box">
-                <h4>PHP</h4>
-                <div class="percent">
-                    <div style="width: 70%;"></div>
-                </div>
-            </div>
-            <div class="box">
-                <h4>MySQL</h4>
-                <div class="percent">
-                    <div style="width: 55%;"></div>
-                </div>
-            </div>
-        </div>
-
-        
     </div>
 </div>
 <div class="text-center" style="padding:20px;">

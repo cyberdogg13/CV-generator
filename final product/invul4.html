@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Form2 </title>
+    <link href="css/form5.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1 class="persona"> Curriculum Vitae </h1>
+</header>
+<br><br><br>
+<img src="img/Picture1.png" alt="cvTim" id="layout">
+
+<div class="wrapper">
+    <form action="cvtim.php" method="post">
+        <section id="pers">
+            <div id="personal">
+                <h2> Personal Info </h2>
+                <div id="names">
+                    <!------------Labels--------->
+                    <!--first name-->
+                    <label class="firstname" for="personal"> First Name: </label>
+                    <!--Insertion-->
+                    <label class="insertion" for="personal"> Insertion: </label>
+                    <!--imput.lastname-->
+                    <label class="lastname" for="personal"> Last Name: </label>
+
+                    <!------------input--------->
+                    <!--firstname-->
+                    <input class="person" type="text" name="firstname">
+                    <!--insertion-->
+                    <input class="person" type="text" name="insertion">
+                    <!--imput.lastname-->
+                    <input class="person" type="text" name="lastname">
+                    <br><br>
+                </div>
+
+                <!--date of birth-->
+                <label for="personal"> Date Of Birth: </label> <br>
+                <input class="date" type="date" name="birth">
+                <br><br><br><br>
+
+                <div id="location">
+                    <!------------Labels--------->
+                    <!--City-->
+                    <label class="city" for="personal"> City: </label>
+                    <!--streetname-->
+                    <label class="street" for="personal"> Street Name: </label>
+                    <!--Adress-->
+                    <label class="postcode" for="personal"> Postal Code: </label>
+                    <!------------input--------->
+                    <!--City-->
+                    <input class="person" type="text" name="city">
+                    <!--Streetname-->
+                    <input class="person" type="text" name="streetname">
+                    <!--Postcode-->
+                    <input class="person" type="text" name="postcode">
+                    <br><br>
+                </div>
+
+                <div id="hobby">
+                    <!--Hobby's-->
+                    <label for="personal"> Hobby's: </label> <br>
+                    <textarea name="hobbies"> </textarea>
+                    <br><br>
+                </div>
+                <!--Motivation.textarea-->
+                <label class="personal" for="personal"> Motivation: </label>
+                <br>
+                <textarea rows="7" cols="50" name="motivation"> </textarea>
+                <br><br>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div id="contact">
+                <!---------Labels-------->
+                <h2> Contact Info </h2> <br>
+                <!--Email-->
+                <label class="email " for="contact"> Email: </label>
+                <!--phonenumber-->
+                <label class="telephone" for="contact"> Telephone: </label>
+                <!--linkedin-->
+                <label class="linkedin" for="contact"> Linkedin ID: </label>
+
+                <!-------input--------->
+                <!--email-->
+                <input class="cont" type="text" name="email">
+                <!--phonenumber-->
+                <input class="cont" type="text" name="telephone">
+                <!--Linkedin-->
+                <input class="cont" type="text" name="Linkedin">
+                <br><br>
+            </div>
+        </section>
+
+        <section id="skillers">
+            <div id="skills">
+                <h2> Skills </h2>
+                <br>
+                <!--work history-->
+                <label for="skills"> Work History: </label> <br>
+                <textarea class="workhis1" name="workHistory1"></textarea>
+                <textarea class="workhis2" name="workHistory2"></textarea>
+                <textarea class="workhis3" name="workHistory3"></textarea>
+                <br><br>
+                <!--certificates/education-->
+                <label for="skills"> Education Information: </label> <br>
+                <textarea rows="6" cols="30" name="education"> </textarea> <br><br>
+                <label for="skills"> Training And Development: </label> <br>
+                <textarea rows="6" cols="30" name="training"> </textarea> <br><br>
+                <!--personal skills-->
+                <label for="skills"> Personal Skills: </label> <br>
+
+                <div id="skil1">
+                    <textarea class="skill1" name="personalskill1"></textarea>
+                    <select class="level1" name="skillLvl1">
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+                    <textarea class="skill4" name="personalskill2"></textarea>
+                    <select class="level4" name="skillLvl2">
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+                </div>
+
+                <div id="skil2">
+                    <textarea class="skill2" name="personalskill3"></textarea>
+                    <select class="level2" name="skillLvl3">
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+                    <textarea class="skill5" name="personalskill4"></textarea>
+                    <select class="level5" name="skillLvl4">
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                    </select>
+                </div>
+                <br><br>
+
+            </div>
+        </section>
+        <input type="submit" name="submit" value="SUBMIT" id="knopje"/>
+    </form>
+</div>
+<br><br>
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("layout");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+<style>
+    #layout{
+        display: flex;
+        float: left;
+        width: 350px;
+        height: 400px;
+        padding-left: 50px;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+    }
+
+    .sticky + .content {
+        padding-top: 102px;
+    }
+</style>
+</body>
+</html>

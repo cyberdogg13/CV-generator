@@ -28,7 +28,7 @@
         information that you have just put into the input fields.</p><br>
         <div class="made-by">
             <h2>Made by Sem, Hensley, Joel en Tim</h2></div>
-        <li><a href="index.php">>>> Link to the templates page <<<</a>
+        <li><a href="chooser.php">>>> Link to the templates page <<<</a>
         <div class="page-wrapper">
                 <div class="circle-wrapper">
                     <div class="success circle"></div>

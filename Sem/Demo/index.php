@@ -1,86 +1,58 @@
 <?php
 ?>
-<html>
+
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <title>Homepage</title>
 </head>
-<style>
-
-    @keyframes slideInDown {
-        0% {
-            transform: translatey(500%);
-        }
-        100% {
-            transform: translatey(0);
-        }
-    }
-
-    @keyframes slideInLeft {
-        0% {
-            transform: translatex(-500%);
-        }
-        100% {
-            transform: translatex(0);
-        }
-    }
-
-    @keyframes slideInRight {
-        0% {
-            transform: translatex(500%);
-        }
-        100% {
-            transform: translatex(0);
-        }
-    }
-
-    .cv1 {
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0s;
-        animation-name: slideInLeft;
-    }
-
-    .cv2 {
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0s;
-        animation-name: slideInDown;
-    }
-
-    .cv3 {
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0s;
-        animation-name: slideInRight;
-    }
-</style>
 <body>
-<div class="line"><h3 class="roeptext">Choose a template</h3></div>
-<div class="center">
-    <div class="body">
-    </div>
-    <div class="page-wrapper">
-        <div class="circle-wrapper">
-            <div class="success-circle"></div>
-            <div class="icon">
-                <i class="fa fa-check"></i>
+<div class="container"
+<div class="midden">
+    <h1>Welcome to the homepage of the Curriculum Vitae generator</h1>
+    <ol>
+
+
+        <div class="container-p1"><p>You've come to the right place!</div>
+        Feel free to make a CV <br><br><br><br><br><br>It took us many many days and a lot of manpower to
+        to finish this project with huge success. <br><br>We have really connected and devoted much of our time to succesfully fulfill the
+        wish of
+        every single person that is sitting in this room at the moment. <br><br>Have fun and don't forget to print your
+        CV at the end or you
+        will lose all of your personal
+        information that you have just put into the input fields.</p><br>
+        <div class="made-by">
+            <h2>Made by Sem, Hensley, Joel en Tim</h2></div>
+        <li><a href="chooser.php">>>> Link to the templates page <<<</a>
+        <div class="page-wrapper">
+                <div class="circle-wrapper">
+                    <div class="success circle"></div>
+                    <div class="icon">
+                        <i class="fa fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="circle-wrapper">
+                    <div class="warning circle"></div>
+                    <div class="icon">
+                        <i class="fa fa-exclamation"></i>
+                    </div>
+                </div>
+
+                <div class="circle-wrapper">
+                    <div class="error circle"></div>
+                    <div class="icon">
+                        <i class="fa fa-times"></i>
+                    </div>
+                </div>
             </div>
-        </div>
-    <div class="cv1">
-        <img src="img/cv1.png" alt="cv1" class="img1">
-        <a href="invul.html" class="Btn btn1">CV 1</a>
-    </div>
-
-    <div class="cv2">
-        <img src="img/krant.png" alt="cv2" class="img2">
-        <a href="invul2.html" class="Btn btn1">CV 2</a>
-    </div>
-
-    <div class="cv3">
-        <img src="img/cvhen.png" alt="cv3" class="img2">
-        <a href="invul3.html" class="Btn btn1">CV 3</a>
-    </div>
+        </li>
+    </ol>
 </div>
 </div>
 </body>

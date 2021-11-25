@@ -10,6 +10,7 @@
     <h1 class="persona"> Curriculum Vitae </h1>
 </header>
 <br><br><br>
+<img src="img/krant.png" alt="krant" id="layout">
 
 <div class="wrapper">
     <form action="krant.php" method="post">
@@ -100,9 +101,9 @@
                 <br>
                 <!--work history-->
                 <label for="skills"> Work History: </label> <br>
-                <textarea class="workhis1" name="workHistory"></textarea>
-                <textarea class="workhis2" name="workHistory"></textarea>
-                <textarea class="workhis3" name="workHistory"></textarea>
+                <textarea class="workhis1" name="workHistory1"></textarea>
+                <textarea class="workhis2" name="workHistory2"></textarea>
+                <textarea class="workhis3" name="workHistory3"></textarea>
                 <br><br>
                 <!--certificates/education-->
                 <label for="skills"> Education Information: </label> <br>
@@ -114,15 +115,15 @@
 
                 <div id="skil1">
                     <textarea class="skill1" name="personalskill1"></textarea>
-                    <select class="level1" name="skilllvl1">
+                    <select class="level1" name="skillLvl1">
                         <option value="1"> 1</option>
                         <option value="2"> 2</option>
                         <option value="3"> 3</option>
                         <option value="4"> 4</option>
                         <option value="5"> 5</option>
                     </select>
-                    <textarea class="skill4" name="personalskill"></textarea>
-                    <select class="level4" name="cars">
+                    <textarea class="skill4" name="personalskill2"></textarea>
+                    <select class="level4" name="skillLvl2">
                         <option value="1"> 1</option>
                         <option value="2"> 2</option>
                         <option value="3"> 3</option>
@@ -132,35 +133,16 @@
                 </div>
 
                 <div id="skil2">
-                    <textarea class="skill2" name="personalskill"></textarea>
-                    <select class="level2" name="cars">
+                    <textarea class="skill2" name="personalskill3"></textarea>
+                    <select class="level2" name="skillLvl3">
                         <option value="1"> 1</option>
                         <option value="2"> 2</option>
                         <option value="3"> 3</option>
                         <option value="4"> 4</option>
                         <option value="5"> 5</option>
                     </select>
-                    <textarea class="skill5" name="personalskill"></textarea>
-                    <select class="level5" name="cars">
-                        <option value="1"> 1</option>
-                        <option value="2"> 2</option>
-                        <option value="3"> 3</option>
-                        <option value="4"> 4</option>
-                        <option value="5"> 5</option>
-                    </select>
-                </div>
-
-                <div id="skil3">
-                    <textarea class="skill3" name="personalskill"></textarea>
-                    <select class="level3" name="cars">
-                        <option value="1"> 1</option>
-                        <option value="2"> 2</option>
-                        <option value="3"> 3</option>
-                        <option value="4"> 4</option>
-                        <option value="5"> 5</option>
-                    </select>
-                    <textarea class="skill6" name="personalskill"></textarea>
-                    <select class="level6" name="cars">
+                    <textarea class="skill5" name="personalskill4"></textarea>
+                    <select class="level5" name="skillLvl4">
                         <option value="1"> 1</option>
                         <option value="2"> 2</option>
                         <option value="3"> 3</option>
@@ -176,6 +158,36 @@
     </form>
 </div>
 <br><br>
+<script>
+    window.onscroll = function() {myFunction()};
 
+    var header = document.getElementById("layout");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+<style>
+    #layout{
+        display: flex;
+        float: left;
+        width: 350px;
+        height: 400px;
+        padding-left: 50px;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+    }
+
+    .sticky + .content {
+        padding-top: 102px;
+    }
+</style>
 </body>
 </html>
